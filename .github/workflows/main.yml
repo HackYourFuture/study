@@ -28,3 +28,5 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: tuliren/publish-gitbook@f3830e3fc7bf059e0501c5ed535d97b2aa181e2e
         uses: tuliren/publish-gitbook@v1.0.0
+        with:
+          github_token: fda4eb11f58d080eb7b651071ef029b0dde93dda
