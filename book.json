@@ -1,0 +1,4 @@
+{
+    "title": "HYF Study Book",
+    "plugins": ["collapsible-menu", "youtube", "codesandbox"]
+}
