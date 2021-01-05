@@ -13,17 +13,20 @@ There is a huge amount of information on the internet and we will be linking to 
 * All good things come to an end. If you find a link that has gone dead, send us a Patch with a `X` after the link.
 
 ### Adding a programming topic
-To explain a concept we use the 4 E's system: Explanation > Example > Exercise > Essence:
+There is a template (`./template-topic.md`) in the repo that can be used to add a new topic. To explain a concept we use the 4 E's system: Essence > Explanation > Example > Exercise:
 
-First *explain* the concept in broad terms. Add text, images, feel free to embed a video here as well (or make your own). 
+First we want to introduce the *essence* of the concept. A concise indication what the concept is about and why it is important.
 
-Then we want to show an *example* of the concept in action, embed some code. Try to get it as close to a real world situation as possible.
+Then we the *explain* the concept in depth. Add text, images, feel free to embed a video here as well (or make your own). 
 
-After that it is time to let the student practice the concept with some *exercises*. There are never too many exercises, but try to order them on difficulty, with the easiest first.
+After that, we want to show an *example* of the concept in action, embed some code. Try to get it as close to a real world situation as possible.
 
-At the end we want to recap the *essence* of the concept to really hit that part home.
+Lastly, it is time to let the student practice the concept with some *exercises*. There are never too many exercises, but try to order them on difficulty, with the easiest first.
 
-Try to embed as much as possible onto the page, we want to keep them focused on the topic at hand and clicking different links in different tabs.
+Try to embed as much as possible onto the page, we want to keep them focused on the topic at hand and not clicking different links in different tabs.
+
+#### Embedding images
+Make sure to upload the image to the repository and not link to an external site.
 
 #### Example code
 If you want your example code to be highlighted in javascript and get trigger the HYF code plugin add `js` to the code block. As follows:
