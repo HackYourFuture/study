@@ -25,25 +25,31 @@ At the end we want to recap the *essence* of the concept to really hit that part
 
 Try to embed as much as possible onto the page, we want to keep them focused on the topic at hand and clicking different links in different tabs.
 
+#### Example code
+If you want your example code to be highlighted in javascript and get trigger the HYF code plugin add `js` to the code block. As follows:
+
+```js
+const wowString = 'cool stuff';
+```
+
 #### Embedding a video
 To embed a video use the following code:
 
-```
-{% youtube src="https://www.youtube.com/watch?v=oHg5SJYRHA0" %}{% endyoutube %}
-```
+![](./hyf-youtube-code-block.png)
 
-{% youtube src="https://www.youtube.com/watch?v=oHg5SJYRHA0" %}{% endyoutube %}
+{% hyf-youtube src="https://www.youtube.com/watch?v=oHg5SJYRHA0" %}
 
-#### Embedding a codesandbox
-For examples or exercises where some code is needed a codesandbox is the preferred environment. To embed it go to the sandbox and click on the embed button to the top right. There will be a link on the left (not the iframe one). Remember to also set it to dark theme. For example:
+#### Embedding simple html pages
+For simple html pages we prefer codepen. The url needs to be the embed url (replace /pen/ with /embed/). You can embed it using the following code:
 
-```
-{% codesandbox %}
-https://codesandbox.io/s/charming-cdn-57lm0?fontsize=14&hidenavigation=1&theme=dark
-{% endcodesandbox %}
-```
+![](./hyf-codepen-codeblock.png)
 
-{% codesandbox %}
-https://codesandbox.io/s/charming-cdn-57lm0?fontsize=14&hidenavigation=1&theme=dark
-{% endcodesandbox %}
+{% hyf-codepen src="https://codepen.io/robvk/embed/OJRZEJv" %}
+
+#### Embedding projects with multiple files
+Codesandbox is quite large, so only when you have multiple files should it be used. Check out the other sections for other options. To embed a codesandbox you can use the following code with a link to the url:
+
+![](./hyf-codesandbox-block.png)
+
+{% hyf-codesandbox src="https://codesandbox.io/s/charming-cdn-57lm0" %}
 
