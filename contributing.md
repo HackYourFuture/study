@@ -38,7 +38,7 @@ const wowString = 'cool stuff';
 #### Embedding a video
 To embed a video use the following code:
 
-![](./hyf-youtube-code-block.png)
+![](./hyf-youtube-codeblock.png)
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=oHg5SJYRHA0" %}
 
@@ -50,9 +50,9 @@ For simple html pages we prefer codepen. The url needs to be the embed url (repl
 {% hyf-codepen src="https://codepen.io/robvk/embed/OJRZEJv" %}
 
 #### Embedding projects with multiple files
-Codesandbox is quite large, so only when you have multiple files should it be used. Check out the other sections for other options. To embed a codesandbox you can use the following code with a link to the url:
+Codesandbox is quite large, so only when you have multiple files should it be used. Check out the other sections for other options. To embed a codesandbox you can use the following code with a link to the url. The url needs to be the embed url (replace /s/ with /embed/):
 
-![](./hyf-codesandbox-block.png)
+![](./hyf-codesandbox-codeblock.png)
 
-{% hyf-codesandbox src="https://codesandbox.io/s/charming-cdn-57lm0" %}
+{% hyf-codesandbox src="https://codesandbox.io/embed/charming-cdn-57lm0" %}
 
