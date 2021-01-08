@@ -17,7 +17,7 @@ window.DocsifyHYFCodePlugin = {
         return function (hook) {
             hook.beforeEach(function (content) {
                 const convertedContent = content.replace(codeBlockRegex, (codeblock) => {
-                    const actualCode = codeblock.substring(13, codeblock.length - 3);
+                    const actualCode = codeblock.substring(6, codeblock.length - 3);
 
                     return codeblock + `\n[view in jsTutor](http://www.pythontutor.com/visualize.html#code=${encodeURIComponent(actualCode)})`;
                     
