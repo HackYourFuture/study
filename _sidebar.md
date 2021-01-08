@@ -12,9 +12,14 @@
   - [Because Windows](./git-and-github/because-windows.md)
   - [Workflows](./git-and-github/workflows.md)
 - [CLI](./cli/README.md)
+- Tools
+  - [JSTutor](/tools/jstutor.md)
+  - [Debugging](/tools/debugging.md)
 - Programming
   - [What is programming](/programming/README.md)
   - [Reading Source Code](/programming/reading-source-code.md)
+- Testing
+  - [Assertion](/testing/assertion.md)
 - [The internet](./the-internet/README.md)
   - [Web development](/the-internet/web-development.md)
 - [HTML & CSS](./html-css/README.md)
