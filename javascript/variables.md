@@ -33,6 +33,8 @@ Here we have assigned to a new variable the calculation `one` plus `one`. Why ha
 Prior to JavaScript ES6 (a version of JavaScript, the language itself is also still evolving) the `var` keyword was the only way to declare a variable. ES6 introduced two new keywords, `let` and `const` for declaring variables. They improve on how the older `var` declaration works (this involves the concept of "scope", which you will learn later). At HackYourFuture we encourage you to use the more modern `let` and `const` keywords over `var`, but you will often come across `var` in existing books, software libraries and examples on the Internet, so you should understand `var` too.
 
 ### let and const
+{% hyf-youtube src="https://www.youtube.com/watch?v=3W7wC9vXvtQ" %}
+
 - read about [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 - read about [const](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Statements/const)
 - [let vs const] (http://wesbos.com/let-vs-const/)

@@ -104,7 +104,6 @@ typeof quuux //-> 'number'
 
 
 ## Arrays
-
 Arrays are values that contain a list of things, instead of just one thing. What's inside the array, we typically call "elements". So, the array `[1, 2, 3]` has three elements. The array `[]` has no elements and is therefore empty. The number of elements in an array is called its "length".
 
 When you want to access an element inside an array, you use an "index". This is the number that you put between brackets (`[]`).
@@ -129,6 +128,9 @@ console.log(arr[a]); // -> jane
 If the index you use is not an integer (a whole number), or if it's less than `0` or if it's greater than or equal to the array's length, you will get back `undefined`.
 
 More about [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
+
+If you prefer to watch a video, have a look at this:
+{% hyf-youtube src="https://www.youtube.com/watch?v=dJ-8o-oXr4c" %}
 
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
