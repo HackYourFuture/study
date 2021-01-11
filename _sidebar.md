@@ -12,14 +12,12 @@
   - [Because Windows](./git-and-github/because-windows.md)
   - [Workflows](./git-and-github/workflows.md)
 - [CLI](./cli/README.md)
-- Tools
-  - [JSTutor](/tools/jstutor.md)
-  - [Debugging](/tools/debugging.md)
 - Programming
   - [What is programming](/programming/README.md)
   - [Reading Source Code](/programming/reading-source-code.md)
-- Testing
-  - [Assertion](/testing/assertion.md)
+  - Programmer habits
+    - [Naming conventions](/programming/naming-conventions.md)
+    - [Incremental coding](/programming/incremental-coding.md)
 - [The internet](./the-internet/README.md)
   - [Web development](/the-internet/web-development.md)
 - [HTML & CSS](./html-css/README.md)
@@ -31,6 +29,11 @@
   - [Fundamentals](./javascript/fundamentals.md)
     - [Variables](./javascript/variables.md)
     - [Values](./javascript/values.md)
+    - [Statements vs. Expressions](./javascript/statements-vs-expressions.md)
+    - [Operators](./javascript/operators.md)
+    - [Conditional statements](./javascript/conditional-statements.md)
+    - [Loops](./javascript/loops.md)
+    - [Special characters](./javascript/names-of-special-characters.md)
   - [Events](./javascript/events.md)
   - [DOM Manipulation](./javascript/dom-manipulation.md)
   - [ES6](./javascript/es6.md)
@@ -46,6 +49,11 @@
   - [Environmental Variables](./node-js/environmental-variables.md)
   - [Setting up a Project](./node-js/setting-up-a-project.md)
   - [DRY, modular server](./node-js/dry-modular-server.md)
+- Testing
+  - [Assertion](/testing/assertion.md)
+- Tools
+  - [JSTutor](/tools/jstutor.md)
+  - [Debugging](/tools/debugging.md)
 - [Software development](./software-development/README.md)
   - [Agile](./software-development/agile.md)
   - [Code Review](./software-development/code-review.md)
