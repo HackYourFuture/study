@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -8,22 +9,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
+
 <body>
   <div id="app"></div>
   <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   <!-- Add the edit on github button -->
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+  <!-- Tabs plugin: https://jhildenbiddle.github.io/docsify-tabs/#/?id=usage -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <!-- HYF Custom plugins -->
+  <script src="./docsify-plugins/code.js"></script>
+  <script src="./docsify-plugins/youtube.js"></script>
+  <script src="./docsify-plugins/codesandbox.js"></script>
+  <script src="./docsify-plugins/codepen.js"></script>
 
   <script>
     window.$docsify = {
       plugins: [
-        EditOnGithubPlugin.create('https://github.com/HackYourFuture/study/blob/master/')
+        EditOnGithubPlugin.create('https://github.com/HackYourFuture/study/blob/master/'),
+        DocsifyHYFCodePlugin.create(),
+        DocsifyHYFYoutubePlugin.create(),
+        DocsifyHYFCodeSandboxPlugin.create(),
+        DocsifyHYFCodepenPlugin.create(),
       ],
       el: "#app",
       repo: 'https://github.com/HackYourFuture/study',
       loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      subMaxLevel: 3,
+      tabs: {
+        persist    : true,
+        sync       : true,
+        theme      : 'classic',
+        tabComments: true,
+        tabHeadings: true
+      }
     }
   </script>
 </body>
+
 </html>
