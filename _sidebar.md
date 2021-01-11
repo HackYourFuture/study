@@ -36,6 +36,8 @@
     - [Loops](/javascript/loops.md)
     - [Functions](/javascript/functions.md)
     - [Scope](/javascript/scope.md)
+    - [Higher order functions](/javascript/higher-order-functions.md)
+    - [Closures](/javascript/closures.md)
     - [Special characters](/javascript/names-of-special-characters.md)
   - [Events](/javascript/events.md)
   - [DOM Manipulation](/javascript/dom-manipulation.md)
