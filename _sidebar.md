@@ -17,6 +17,7 @@
   - [Reading Source Code](/programming/reading-source-code.md)
   - Programmer habits
     - [Naming conventions](/programming/naming-conventions.md)
+    - [Don't Repeat Yourself](/programming/dont-repeat-yourself.md)
     - [Incremental coding](/programming/incremental-coding.md)
 - [The internet](/the-internet/README.md)
   - [Web development](/the-internet/web-development.md)
@@ -33,6 +34,8 @@
     - [Operators](/javascript/operators.md)
     - [Conditional statements](/javascript/conditional-statements.md)
     - [Loops](/javascript/loops.md)
+    - [Functions](/javascript/functions.md)
+    - [Scope](/javascript/scope.md)
     - [Special characters](/javascript/names-of-special-characters.md)
   - [Events](/javascript/events.md)
   - [DOM Manipulation](/javascript/dom-manipulation.md)
