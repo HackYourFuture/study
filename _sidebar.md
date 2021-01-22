@@ -1,4 +1,3 @@
-
 - [Learning](/learning/README.md)
   - [Learning from Code](/learning/learning-from-code.md)
   - [How to Ask Questions](/learning/how-to-ask-questions.md)
@@ -60,8 +59,7 @@
 - Testing
   - [Assertion](/testing/assertion.md)
 - Tools
-  - [JSTutor](/tools/jstutor.md)
-  - [Debugging](/tools/debugging.md)
+  - [Debuggers](/tools/debuggers.md)
 - [Software development](/software-development/README.md)
   - [Agile](/software-development/agile.md)
   - [Code Review](/software-development/code-review.md)
