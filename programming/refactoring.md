@@ -1,0 +1,3 @@
+- chunking
+- factoring in
+- factoring out
