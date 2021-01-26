@@ -59,8 +59,7 @@
 - Testing
   - [Assertion](/testing/assertion.md)
 - Tools
-  - [JSTutor](/tools/jstutor.md)
-  - [Debugging](/tools/debugging.md)
+  - [Debuggers](/tools/debuggers.md)
 - [Software development](/software-development/README.md)
   - [Agile](/software-development/agile.md)
   - [Code Review](/software-development/code-review.md)

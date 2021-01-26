@@ -115,3 +115,5 @@ For a complete list of reserved names, see the MDN page for [Keywords](https://d
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
 - [Naming Conventions in Programming](https://blog.jsecademy.com/naming-conventions-in-programming/)
+- [Naming Conventions language agnostic](https://github.com/kettanaito/naming-cheatsheet)
+- [BEM (CSS convention) cheat sheet](https://9elements.com/bem-cheat-sheet/)
