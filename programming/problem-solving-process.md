@@ -135,7 +135,7 @@ Probably we have made a small typo. Let’s google the include function. When we
 When we run the following code, it does not give any errors anymore.
 However, I do notice that only ​rottenBanana ​is selected and displayed.
 
-Hmmm, what to do? Let’s go back to the basics. I remember that in my JavaScript 1 Module I learned something about ​operators.​ Indeed, I find that you can use the ​```!``` operator​ to return what is not ​true​ (everything that does ​not​ contain the word rotten). Let me try to add the ​```!``` operator.
+Hmmm, what to do? Let’s go back to the basics. I remember that in my JavaScript Module I learned something about ​operators.​ Indeed, I find that you can use the ​```!``` operator​ to return what is not ​true​ (everything that does ​not​ contain the word rotten). Let me try to add the ​```!``` operator.
 
 ```js
 const fruits = ["apple", "rottenBanana", "mango"];
@@ -152,4 +152,29 @@ _Yay! It seems to work!_
 
 ### Reflect (6)
 
-> missing.  hmmm, isn't this the most important?
+Reflecting over the code a couple of ideas cross our minds. The `goodFruitsArray` variable is only used once, should we maybe inline it and write it as follows:
+
+```js
+function takeOutRottenFruit(arrayOfFruits) {
+  return arrayOfFruits.filter(fruit => !fruit.includes("rotten"));
+}
+```
+
+We also use some modern JavaScript syntax in the filter and includes functions, but not everywhere. So maybe we should make it all modern and convert our function to an arrow function, as follows:
+
+```js
+const takeOutRottenFruit = (arrayOfFruits) => {
+  return arrayOfFruits.filter(fruit => !fruit.includes("rotten"));
+}
+```
+
+Finally we think of the fact if we will understand what this function does in 6 months or if we need a comment of some kind. In the end we decide that the function is simple enough and we named the function and parameters well so it is self explanatory. No comment needed.
+
+---
+
+# Extra Reading
+- [How to THINK like a programmer](https://www.youtube.com/watch?v=NNazO2tMHno)
+- [Problem-Solving for Developers](https://www.youtube.com/watch?v=UFc-RPbq8kg)
+- [Lessons in problem solving](https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/)
+- [Computational thinking](https://www.youtube.com/watch?v=qbnTZCj0ugI)
+

@@ -15,6 +15,7 @@
 - Programming
   - [What is programming](/programming/README.md)
   - [Reading Source Code](/programming/reading-source-code.md)
+  - [Problem solving](/programming/problem-solving-process.md)
   - Programmer habits
     - [Naming conventions](/programming/naming-conventions.md)
     - [Don't Repeat Yourself](/programming/dont-repeat-yourself.md)
