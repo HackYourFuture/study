@@ -53,8 +53,6 @@ const MAX_AGE = 60;
 
 This casing is used for class names in css and sometimes for filenames in JavaScript.
 
-
-
 ```css
 .page-title { 
   color: #ff23be.

@@ -1,6 +1,12 @@
 # Values
 
-Values are the "things" that you assign to a variable. All values have a type. In our example above, the variable `x` is assigned a value of type `number`. JavaScript supports the following types:
+Values are the "things" that you assign to a variable. All values have a type. In the following example, the variable `x` is assigned a value of type `number`. 
+
+```js
+let x = 5;
+```
+
+JavaScript supports the following types:
 
 * `string`, e.g. "HackYourFuture"
 * `number`, e.g. 5, or 10.6
