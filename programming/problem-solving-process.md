@@ -89,7 +89,7 @@ However, let’s try to make this a bit more specific. We have to write a progra
 ### Divide (2)
 
 We now know what we want to do in a general sense, but can we divide our problems in a few different problems? Yes, we can:
-1. Declare a variable named ​fruits w​ ith the fruits mentioned in the example
+1. Declare a variable named ​fruits w​ith the fruits mentioned in the example
 1. Define an empty function named ​TakeOutRottenFruit
 1. Inside the empty function write instructions that take out the strings containing the word “rotten”.
 
