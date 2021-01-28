@@ -1,27 +1,16 @@
-# Problem Solving Process
-
-(tips for non-programmers)
-
-### Index
-* [the problem-solving process](#the-problem-solving-process)
-  1. [understand and define](#1--understand-and-define)
-  1. [divide](#2--divide)
-  1. [finding the right technique](#3--finding-the-right-technique)
-  1. [experiment](#4--experiment)
-  1. [debug](#5--debug)
-  1. [reflect](#6--reflect)
-* [fruit vendor example](#fruit-vendor-example)
-
-
----
-
-## The Problem-Solving Process
+# Problem Solving
 
 Many people think programming is just about the code, 0’s and 1’s, about frameworks, technical stuff, or complicated words that just confuse us.
 
 However, to be a good programmer ​__the most important thing is to be good at problem solving__. ​We program computers because we have:
 1. A problem/need
 2. We want to use the computer to help us solve that problem / need
+
+Unfortunately computers are stupid and finding the right commands can be tough, as the following video shows you:
+
+{% hyf-youtube src="https://www.youtube.com/watch?v=cDA3_5982h8" %}
+
+## Problem solving process
 
 This chapter discusses the six steps of problem solving. This gives you a step-by-step approach on how to analyze and write code.
 
@@ -35,7 +24,7 @@ Big problems (or challenges) should be divided into smaller problems, so that th
 
 ###​ ​3. Finding the right technique
 
-Now it is time to think about the techniques you know that could possibly help you to solve this problem (e.g. loops, if statements, filter, map etc.). If you do not find an appropriate technique you will have to find it. In both cases Google will probably be your best friend. Remember, most developers spend hours per day on Google trying to find solutions to their problems!
+Now it is time to think about the techniques you know that could possibly help you to solve this problem (e.g. loops, if statements, filter, map etc.). If you can not think of an appropriate technique you will have to find it. In both cases Google will probably be your best friend. Remember, most developers spend hours per day on Google trying to find solutions to their problems, this is absolutely normal!
 
 ### 4. Experiment
 
