@@ -61,7 +61,7 @@ If you get used to your Browser's debugger early on in your programming life whi
 
 ## VSCode Debugger
 
-Visual Studio Code comes with it's own Node.js debugger built in, you can debug .js files without needing to install or configure anything. This de
+Visual Studio Code comes with it's own Node.js debugger built in, you can debug .js files without needing to install or configure anything. Have a look at the documentation on it [here](https://code.visualstudio.com/docs/editor/debugging).
 
 - **Pros**:
   - all in one place! you can debug a .js file in the same place you write it.
