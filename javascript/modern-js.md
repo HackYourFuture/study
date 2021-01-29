@@ -1,7 +1,7 @@
 # Modern JavaScript
 You are undoubtedly different than when you were a baby. Back then you couldn't do much except crying. That's pretty much it. But as the years pass you increasingly could do more and more: walking, socializing or playing an instrument.
 
-Likewise, so has JavaScript evolved. Throughout the HackYourFuture course you have, unknowingly, used syntax from different JavaScript versions. For example, if you've ever declared a function like this:
+Likewise, so has JavaScript evolved. Throughout learning programming you probably have, unknowingly, used syntax from different JavaScript versions. For example, if you've ever declared a function like this:
 
 ```js
 function aFunction() {
