@@ -46,6 +46,7 @@
   - [Events](/javascript/events.md)
   - [DOM Manipulation](/javascript/dom-manipulation.md)
   - [ES6](/javascript/es6.md)
+  - [Modern JS](/javascript/modern-js.md)
   - [Functional Programming](/javascript/functional-programming.md)
   - [OOP](/javascript/oop.md)
   - [Asynchronous](/javascript/asynchronous.md)
