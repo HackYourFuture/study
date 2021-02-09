@@ -71,7 +71,7 @@ The second type of local scope is called **block scope**. A block, generally spe
 
 In the ES6 syntax, which is now the standard in the software development world, we prefer to declare variables using `const` and `let`. This is because the keywords are more descriptive and restrictive. This makes them easier to work with.
 
-In relation to scope both also behave differently: they are block scoped. This means that they can be accessed from outside a `{ }`.
+In relation to scope both also behave differently: they are block scoped. This means that they can *not* be accessed from outside a `{ }`.
 
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
