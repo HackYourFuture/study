@@ -128,7 +128,7 @@ const greeting = (name, greeting = 'Hello') => {
 }
 
 greeting('Burak');
-greeting('Veronika', 'здороваться');
+greeting('Veronika', 'Привет');
 ```
 
 This is a nice and simple way to set some default values without needing to add if statements. Beautiful!
