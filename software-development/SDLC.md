@@ -14,7 +14,7 @@ There are 6 cycles for the development lifecycle that are important to distingui
 ---
 ## Requirements gathering
 
-**Background**: The requirement is the first stage in the SDLC process. In order to built new software as an engineer you need to make sure you built what a customer actually wants to use. Most software developing firms agree that the first phase of the process begins by identifying a need. This  requirement is a wish from a customer that needs to be built. It’s usually the job of a Product manager / Product owner to define the requirements.
+**Background**: The requirement is the first stage in the SDLC process. In order to build new software as an engineer you need to make sure you built what a customer actually wants to use. Most software developing firms agree that the first phase of the process begins by identifying a need. This  requirement is a wish from a customer that needs to be built. It’s usually the job of a Product manager / Product owner to define the requirements.
 
 **Output of this phase**: a list of requirements that make up the project. Requirements can contain a design of how the application should look like. Which buttons are on the page, what collor, what is the behaviour of the application etc.
 
@@ -27,8 +27,8 @@ There are 6 cycles for the development lifecycle that are important to distingui
 Questions typically answered in this phase are. 
 
 -	What tool or technology is most suited for the job:<br/>
-    o	Does the system needs to be high available<br/>
-    o	Will there be a high load on the system (a lot of concurrent user)?<br/>
+    o	Does the system need to be high available<br/>
+    o	Will there be a high load on the system (a lot of concurrent users)?<br/>
     o	What data storage do we need to select<br/>
 -	What tools do we have available in the company<br/>
     o	Some tools (like databases) come with high licenses costs<br/>
@@ -64,7 +64,7 @@ It's important to understand that making fundamental changes to the software arc
 **Background**
 When working in bigger organizations you will notice that there is more than one environment that is being used to develop and deliver software in a controllable manner. Before we explain a bit on the concepts and the different environments let’s do a small step back and align on a deployment.
 
-{% video src="https://www.youtube.com/watch?v=nZ3BaTY8c9M" %} 
+{% hyf-youtube src="https://www.youtube.com/watch?v=nZ3BaTY8c9M" %} 
 
 In the explanation above you see the difference of a local development environment and the environment which runs your great software for the rest of the world to see (the production environment). However when multiple people work on the same code base and software program grows in complexity, organizations tend to add one or more environments in the process.
 
