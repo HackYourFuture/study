@@ -54,29 +54,36 @@ It's important to understand that making fundamental changes to the software arc
 **Persons involved:** Engineers, either a (senior) software engineer of the team or an architect<br/>
 
 ## Software Development
+**Background**: In this phase the actual coding starts and the system is build. One or multiple engineer start to build the entire system writing code in a chosen programming language. The requirements and the high level architecture design usually serve as input to this phase. As there are usually more than one engineer involved, and in the future other engineers might need to work on the code you created it’s common that the engineers follow the coding guidelines of the company they are working for. 
+During development sometimes short cuts are taken to get faster to market. These shortcut are sometimes called technical debt. Wikipedia states; Technical Debt is a concept in software development that reflects the implied cost of additional rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer.<br/>
+
+**Who is responsible**: Engineers
+
 
 ## Testing
+**Background:** Testing is mentioned as a separate phase but usually already starts earlier. Some tests are written during development to automate some of the testing. In general in this phase the requirements used as the starting point to test the functionality of the software. Any defects found are assigned to developers to get them fixed. As described above the testing is an integral part of development phase more and more as tests can be automated and written in code.
+Testing involves not only testing the new functionality that is build, but also making sure the other parts of a system still work as planned. For example if you need to update the schema of your database while developing a new feature, you want to make sure this doesn’t have any negative consequences for other parts of the system. This type of testing is called regreission testing. 
+From Wikipedia: *Regression testing is re-running functional and non-functional tests to ensure that previously developed and tested software still performs after a change. If not, that would be called a regression.* <br/>
 
-## Software Design
+**Who is responsible:** depending on the organization, separate Quality assurance testers, test engineers or the engineers themselves.
+
 
 ## Deployment (and environments)
 
 **Background**
 When working in bigger organizations you will notice that there is more than one environment that is being used to develop and deliver software in a controllable manner. Before we explain a bit on the concepts and the different environments let’s do a small step back and align on a deployment.
 
-{% hyf-youtube src="https://www.youtube.com/watch?v=nZ3BaTY8c9M" %} 
+{% hyf-youtube src="https://www.youtube.com/watch?v=nZ3BaTY8c9M" %}
 
-In the explanation above you see the difference of a local development environment and the environment which runs your great software for the rest of the world to see (the production environment). However when multiple people work on the same code base and software program grows in complexity, organizations tend to add one or more environments in the process.
+In the explanation above you see the difference of a local development environment and the environment which runs your software for the rest of the world to see (the production environment). However when multiple people work on the same code base and software program grows in complexity organizations tend to add one or more environments in the process.
 
-An environment definition and example
 
 **Different environments** <br/>
-Development environment: This is where the software is developed, this could be the laptop of the engineer or a shared server where multiple engineers are working on together. <br/>
-Staging environment<br/>
-Production<br/>
-Activities at different stages of the funnel: testing, performance, security, etc. etc. etc. <br/>
-Different roles<br/>
-Definitions: DTAP<br/>
+**Development:**  This is where the software is developed, this could be the laptop of the engineer or a shared server where multiple engineers are working on together.  <br/>
+**Testing:** this is the environment where the main testing is performed. From the 4 environments described this environment is the one that is sometimes optional. Testing could also be performed in both the development and Staging environment. <br/>
+**Staging:** This environment (sometimes called acceptance) is a near to identical version of production (usually without the customer data) to validate if everything is running in the right way. As this environment has the same setup as production things like performance test (determining if the new release will reduce the maximum  throughput) or security testing (to determine if any vulnerabilities are introduced) are usually performed. <br/>
+**Production:** This is the environment that the customers are actually using. <br/>
+
 
 
 ---
