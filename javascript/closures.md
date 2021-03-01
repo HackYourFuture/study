@@ -31,3 +31,5 @@ If you just can't get enough, here are some extra links that mentors/students ha
 - [Understanding Closures](https://www.youtube.com/watch?v=rBBwrBRoOOY)
 - [Master the JavaScript interview: what is a closure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
 - [I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+- [Closure in Javascript](https://www.youtube.com/watch?v=71AtaJpJHw0&t=7s)
+- [Closures in JavaScript | Inside a loop, inner function and setTimeoout](https://www.youtube.com/watch?v=-xqJo5VRP4A)

@@ -189,6 +189,60 @@ showResult(name, subject, grade);
 
 Note that we can even have default values while destructuring an array like we did with the subject in the example above!
 
+## Async / await
+If you have not learned anything about Promises yet, skip this part for now and wait until you understand that. This is a quite advanced addition to the modern JS repetoire.
+
+Async/await is syntax to help make callbacks more readable. Here's what async/await might look in action:
+
+```js
+async fetchData () {
+  const fetchedData = await fetch('https://randomuser.me/api/');
+  const parsedData = await fetchedData.json();
+  return parsedData;
+}
+```
+
+How do we use it? We put the keyword `async` in front of the function declaration that will contain asynchronous code. Then in every line that returns a Promise we put the keyword `await` in front. That's it. Now the function will wait for the return of the fetch promise and grabbing the data before continuing to the next line.
+
+### Catching errors in async/await
+As you might have noticed, the `async/await` keywords don't give us a way catching errors like it does in the Promise object.
+
+But before we get into that, we should define "catching errors" a little bit. By "catching errors" we mean:
+
+1. that a line of code has caused an error (because of incorrect syntax or data type)
+2. that the program has shutdown to prevent any other errors from happening
+3. that the application gives feedback to the developer and/or user about where the error came from
+
+In the Promise object, we can use the function `catch` to take care of errors. It takes in a callback, which automatically receives an error object. Here's an example:
+
+```js
+Promise.catch(function(error) {
+  console.log(error);
+});
+```
+
+With the `async/await` keywords, we don't get a `catch` function to use. So instead we have to use some other solution: the `try... catch` block. It's also an addition to the language, given to us by **ECMAScript 6**:
+
+```js
+  // This function will run. If anything goes wrong...
+  async fetchData () {
+    try {
+    const fetchedData = await fetch('https://randomuser.me/api/');
+    const parsedData = await fetchedData.json();
+    return parsedData;
+    } catch (err) {
+      // ...the code in this block will execute. The error that has been created will now be inserted into `err`
+      console.log('Oops, something went wrong!', err);
+    }
+  }
+```
+
+### Extra reading about Async/await
+- [The Evolution of Callbacks, Promises & Async/Await](https://www.youtube.com/watch?v=gB-OmN1egV8)
+- [Async JS Crash Course - Callbacks, Promises, Async/Await](https://www.youtube.com/watch?v=PoRJizFvM7s)
+- [JavaScript Try Catch & Error Handling ES6 Tutorial](https://www.youtube.com/watch?v=ye-aIwGJKNg)
+- [Error handling, "try..catch"](https://javascript.info/try-catch)
+
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
 
