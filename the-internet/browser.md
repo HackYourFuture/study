@@ -38,3 +38,9 @@ If you just can't get enough, here are some extra links that mentors/students ha
 
 - [Dealing with Cross Browser Compatibility](https://www.youtube.com/watch?v=9tEixRJ3GeI)
 - [Understanding The Stacking Context for Cross Browser Compatibility](https://medium.com/@mattcroak718/understanding-the-stacking-context-for-cross-browser-compatibility-2b21db1cf621)
+- [LifeWire](https://www.lifewire.com/what-is-a-browser-446234)
+- [Foxy Video](https://www.google.com/search?q=what+is+a+web+browser&client=safari&rls=en&source=lnms&tbm=vid&sa=X&ved=0ahUKEwjT_fHmrubbAhWszIMKHYArAKUQ_AUICigB&biw=1280&bih=739)
+- [Browser vs Search Engine](https://www.computer-geek.net/what-is-the-difference-be-va-47.html)
+- [how do they work](https://www.youtube.com/watch?v=WjDrMKZWCt0)
+- [Browsers? 1](https://www.youtube.com/watch?v=TcbhVv9ty44)
+- [Browsers? 2](https://www.youtube.com/watch?v=Ir61LfjYyHk)

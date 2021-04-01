@@ -26,6 +26,7 @@
   - [What is the DOM?](/the-internet/dom.md)
   - [DOM Manipulation](/the-internet/dom-manipulation.md)
   - [Event Loop](/the-internet/event-loop.md)
+  - [HTTP](/the-internet/http.md)
   - [API](/the-internet/api.md)
     - [Fetch](/the-internet/fetch.md)
 - [HTML & CSS](/html-css/README.md)
@@ -62,6 +63,7 @@
   - [Environmental Variables](/node-js/environmental-variables.md)
   - [Setting up a Project](/node-js/setting-up-a-project.md)
   - [DRY, modular server](/node-js/dry-modular-server.md)
+  - [Getting Started](/node-js/express-js.md)
 - Testing
   - [Assertion](/testing/assertion.md)
 - Tools
@@ -70,4 +72,8 @@
   - [Agile](/software-development/agile.md)
   - [Code Review](/software-development/code-review.md)
   - [Testing](/software-development/testing.md)
+  - Roles
+    - [Backend](/software-development/backend.md)
 - [Contribution guide](/contributing.md)
+- Definitions
+  - [Client-server model](/definitions/client-server-model.md)
