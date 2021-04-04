@@ -61,11 +61,13 @@
   - [REPL](/node-js/repl.md)
   - [Getting Started](/node-js/getting-started.md)
   - [Built-In Modules](/node-js/built-in-modules.md)
+  - [Express](/node-js/express-js.md)
   - [Debugging](/node-js/debugging.md)
   - [Environmental Variables](/node-js/environmental-variables.md)
   - [Setting up a Project](/node-js/setting-up-a-project.md)
   - [DRY, modular server](/node-js/dry-modular-server.md)
-  - [Getting Started](/node-js/express-js.md)
+  - [Consuming API's](/node-js/consuming-apis.md)
+  - [Templating](/node-js/templating.md)
 - Testing
   - [Assertion](/testing/assertion.md)
 - Tools
