@@ -22,7 +22,7 @@ Have a look at this video by [Stas](https://github.com/Stasel) that explains the
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=Dr6ww7vp0Kc" %}
 
-### Public/private APIs
+## Public/private APIs
 
 There are 2 different types of APIs: **public** and **private** APIs.
 
@@ -36,7 +36,7 @@ Keep this in mind: in the real world **programming is only a means to serving a 
 
 - [The Business Impact of Private, Partner and Public APIs](https://www.youtube.com/watch?v=Bk50AYGvs-g)
 
-### Connecting with APIs
+## Connecting with APIs
 
 A big part of what applications do is **moving data from one place to another**. Let's say you are on the HackYourFuture website and feel like donating some money. First of all, that's very nice of you! You head out to the website and click on the donate button. You type in the amount and click on "donate". You'll notice you immediately get redirected to a different website, namely checkout.stripe.com. How did Stripe know how to do this?
 
@@ -82,7 +82,7 @@ xhr.onerror = function() {
 
 This way of making HTTP Requests is outdated (and not recommended to use), but it's good to be aware of it as you might still see it in old code bases.
 
-The newer way of making HTTP Requests involves using the `Fetch API`. You'll learn more about that next week!
+The newer way of making HTTP Requests involves using the `Fetch API`. You can read more about this in our [fetch](./fetch.md) section.
 
 For further study of how to make HTTP Requests, check out the following resources:
 
@@ -95,3 +95,5 @@ If you just can't get enough, here are some extra links that mentors/students ha
 - [APIs Are Like User Interfaces - Just With Different Users in Mind](https://www.programmableweb.com/news/apis-are-user-interfaces-just-different-users-mind/analysis/2015/12/03)
 - [What are APIs - series](https://www.youtube.com/watch?v=cpRcK4GS068&list=PLcgRuP1JhcBP8Kh0MC53GH_pxqfOhTVLa)
 - [APIs for Beginners](https://www.youtube.com/watch?v=GZvSYJDk-us)
+- [ELI5: What is an API?](https://dev.to/awwsmm/eli5-what-is-an-api-1dd2)
+- [Web APIs Explained By Selling Goods From Your Farm](https://blog.codeanalogies.com/2018/02/27/web-apis-explained-by-selling-goods-from-your-farm/)
