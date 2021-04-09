@@ -12,7 +12,7 @@ Computers can't understand human readable programming languages such as JavaScri
 
 Node.js is more than just the V8 JavaScript engine. It's also a **library with many built-in modules** that can perform **asynchronous I/O operations** to [prevent JavaScript code from blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/). When Node.js needs to perform an I/O operation, such as reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume operations when a response comes back. This is accomplished through the [event loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/).
 
-Which application on your computer also has a JavaScript runtime? [Answer](../the-internet/browser.md)
+Which application on your computer also has a JavaScript runtime? [Answer](https://study.hackyourfuture.net/#/the-internet/browser.md)
 
 ## <a name="what-can-node-do">What can Node.js do?</a>
 As mentioned above you already have a JavaScript runtime on your computer. So what can Node.js do that your browser can't?
@@ -24,8 +24,6 @@ The opposite of the frontend is the **backend**, which provides services that yo
 <img src="https://i.imgur.com/kh2JveL.png" alt="Request-response cycle" width="70%"/>
 
 Common tasks that servers need to perform include hosting web pages, sharing files, providing email communications, etc. These tasks require access to the file system and other interactions with the computer which browsers don't support for security reasons. This is where Node.js comes into play, it provides functionality to perform file operations and interact with your device so it can perform all the necessary operations to act as a server.
-
-Why do web browsers not allow access to the file system? [Answer](./Questions#security)
 
 In summary Node.js provides a JavaScript runtime with extra functionality to perform tasks that a browser won't do on your device. This allows us to use JavaScript in the back-end to provide services, develop desktop applications or write command line tools.
 
