@@ -195,7 +195,7 @@ If you have not learned anything about Promises yet, skip this part for now and 
 Async/await is syntax to help make callbacks more readable. Here's what async/await might look in action:
 
 ```js
-async fetchData () {
+async function fetchData () {
   const fetchedData = await fetch('https://randomuser.me/api/');
   const parsedData = await fetchedData.json();
   return parsedData;
@@ -225,7 +225,7 @@ With the `async/await` keywords, we don't get a `catch` function to use. So inst
 
 ```js
   // This function will run. If anything goes wrong...
-  async fetchData () {
+  async function fetchData () {
     try {
     const fetchedData = await fetch('https://randomuser.me/api/');
     const parsedData = await fetchedData.json();
