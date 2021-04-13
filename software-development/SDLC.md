@@ -16,9 +16,8 @@ There are 6 cycles for the development lifecycle that are important to distingui
 
 **Background**: The requirement is the first stage in the SDLC process. In order to build new software as an engineer you need to make sure you built what a customer actually wants to use. Most software developing firms agree that the first phase of the process begins by identifying a need. This  requirement is a wish from a customer that needs to be built. It’s usually the job of a Product manager / Product owner to define the requirements.
 
-**Output of this phase**: a list of requirements that make up the project. Requirements can contain a design of how the application should look like. Which buttons are on the page, what collor, what is the behaviour of the application etc.
-
-**Role(s) involved**: A product owner or project manager (the roles will be explained later)
+**Output**: a list of requirements that make up the project. Requirements can contain a design of how the application should look like. Which buttons are on the page, what collor, what is the behaviour of the application etc.
+**Who is responsible:**: A product owner or project manager (the roles will be explained later)
 
 ## Software Design
 
@@ -48,23 +47,23 @@ As described on [this website on architecture](https://martinfowler.com/architec
 It's important to understand that making fundamental changes to the software architecture can be costly; changing from a MongoDB database to Postgress can be complex and time consuming. Therefore it's important to understand that: <br/>
 *Software architecture is about making fundamental structural choices that are costly to change once implemented.*
 
-
-
-**Output of this phase:** a software design <br/>
-**Persons involved:** Engineers, either a (senior) software engineer of the team or an architect<br/>
+**Output:** a software design <br/>
+**Who is responsible:** Engineers, either a (senior) software engineer of the team or an architect<br/>
 
 ## Software Development
 **Background**: In this phase the actual coding starts and the system is build. One or multiple engineer start to build the entire system writing code in a chosen programming language. The requirements and the high level architecture design usually serve as input to this phase. As there are usually more than one engineer involved, and in the future other engineers might need to work on the code you created it’s common that the engineers follow the coding guidelines of the company they are working for. 
-During development sometimes short cuts are taken to get faster to market. These shortcut are sometimes called technical debt. Wikipedia states; Technical Debt is a concept in software development that reflects the implied cost of additional rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer.<br/>
+During development sometimes shortcuts are taken to get faster to market. These shortcut are sometimes called technical debt. Wikipedia states; Technical Debt is a concept in software development that reflects the implied cost of additional rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer.<br/>
 
+**Output**: Written code <br/>
 **Who is responsible**: Engineers
 
 
 ## Testing
-**Background:** Testing is mentioned as a separate phase but usually already starts earlier. Some tests are written during development to automate some of the testing. In general in this phase the requirements used as the starting point to test the functionality of the software. Any defects found are assigned to developers to get them fixed. As described above the testing is an integral part of development phase more and more as tests can be automated and written in code.
-Testing involves not only testing the new functionality that is build, but also making sure the other parts of a system still work as planned. For example if you need to update the schema of your database while developing a new feature, you want to make sure this doesn’t have any negative consequences for other parts of the system. This type of testing is called regreission testing. 
+**Background:** Testing is mentioned as a separate phase but usually already starts earlier. Tests are written during development to automate some of the testing. Generally in this phase the requirements used as the starting point of the application are used to test the functionality of the software. Any defects found are assigned to developers to get them fixed. As described above, testing is an integral part of the development phase as more and more tests can be automated.
+Testing involves not only testing the new functionality that is built, but also making sure the other parts of a system still work as planned. For example if you need to update the schema of your database while developing a new feature, you want to make sure this doesn’t have any negative consequences for other parts of the system. This type of testing is called regression testing. 
 From Wikipedia: *Regression testing is re-running functional and non-functional tests to ensure that previously developed and tested software still performs after a change. If not, that would be called a regression.* <br/>
 
+**Output**: Tests either writen in code or test cases <br/>
 **Who is responsible:** depending on the organization, separate Quality assurance testers, test engineers or the engineers themselves.
 
 
@@ -78,24 +77,33 @@ When working in bigger organizations you will notice that there is more than one
 In the explanation above you see the difference of a local development environment and the environment which runs your software for the rest of the world to see (the production environment). However when multiple people work on the same code base and software program grows in complexity organizations tend to add one or more environments in the process.
 
 
-**Different environments** <br/>
+### Different environment <br/>
 **Development:**  This is where the software is developed, this could be the laptop of the engineer or a shared server where multiple engineers are working on together.  <br/>
 **Testing:** this is the environment where the main testing is performed. From the 4 environments described this environment is the one that is sometimes optional. Testing could also be performed in both the development and Staging environment. <br/>
-**Staging:** This environment (sometimes called acceptance) is a near to identical version of production (usually without the customer data) to validate if everything is running in the right way. As this environment has the same setup as production things like performance test (determining if the new release will reduce the maximum  throughput) or security testing (to determine if any vulnerabilities are introduced) are usually performed. <br/>
-**Production:** This is the environment that the customers are actually using. <br/>
+**Staging:** This environment (sometimes called acceptance) is a near to identical version of production (usually without the customer data) to validate if everything is running in the right way. As this environment has the same setup as production things like performance testing (determining if the new release will reduce the maximum  throughput) or security testing (to determine if any vulnerabilities are introduced) are usually performed. <br/>
+**Production:** This is the environment that the customers are actually using.  <br/>
 
+### Deployments
+After the product is tested, it is deployed to the production environment. Sometimes first a UAT (User acceptance test) is done to verify if the developed product meets the desired customer or product manager expectation. This test usually happens on the staging environment. 
+Deploying to production is the most sensitive step, this environment is usually protected and engineers should not directly push to it. Making changes to production may be done by deploying new code directly (overwriting old code, so only one copy is present at a time), or by deploying a configuration change. This can take various forms: <br/>
+-	deploying a parallel installation of a new version of code, and switching between them with a configuration change; <br/>
+-	deploying a new version of code with the old behavior and a feature flag, and switching to the new behavior with a configuration change that performs a flag flip; <br/>
+-	or by deploying separate servers (one running the old code, one the new) and redirecting traffic from old to new with a configuration change at the traffic routing level. These in turn may be done all at once or gradually, in phases.<br/>
 
+In some companies a small amount of users is being served a different version of the application. This concept is called A/B testing or multivariate testing. In this way it can be confirmed that the new change (for example a new text or button) has the desired effect, for example a higher conversion.<br/>
+**Output:** An artifact deployed and running on production
+**Who is responsible:**: The engineers are usually responsible for doing the release, while in some organization a separate group of people ‘operations’ is responsible for the release to production. 
 
----
-Reference :
+## Maintenance
+The last phase in the Software development lifecycle is the maintenance phase. This is the phase where maintenance is happening and is sometimes referred to as support. In literature the deployment and the maintenance phase are sometimes combined in one.
+Maintenance is a bit different as it happens after the system is developed and deployed and by monitoring the performance it makes sure that the system continues to perform as per the specification mentioned in the first phase. Some activities in this phase are;
+-	bug fixing - bugs are reported which where not found during testing
+-	upgrades and patches – newer dependencies where vulnerabilities have been fixed need to be patched<br/>
+**Output**: to fix a bug a change needs to be made, tested and deployed again as per the earlier phases
+**Who is responsible:** The engineers are usually involved in making the changes, some organizations also have dedicated support engineers or operation teams to handle this phase.
 
-a
----
 
 ## References
 
-* [Agile Manifesto](https://agilemanifesto.org/principles.html)
-https://martinfowler.com/architecture/
-
-### Text Books
+* [Martin Fowler on Architecture](https://martinfowler.com/architecture/)
 
