@@ -103,7 +103,7 @@ Maintenance is a bit different as it happens after the system is developed and d
 **Who is responsible:** The engineers are usually involved in making the changes, some organizations also have dedicated support engineers or operation teams to handle this phase.
 
 
-## References
+## References 
 
 * [Martin Fowler on Architecture](https://martinfowler.com/architecture/)
 
