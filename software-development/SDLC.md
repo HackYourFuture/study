@@ -1,6 +1,6 @@
 # Software development lifecycle
 
-When developing software, you usually do this for a client or a customer, together with other engineers. Software Development Life Cycle (SDLC) is the process used by the software industry to design, develop and test high quality software. There are different phases in the software development that when finished will result in working software. The SDLC describes different phases with an ordering of the phases, each phase produces deliverables required by the next phase. It’s important to understand the different stages as it allows you to make a step from local engineering on your laptop to working in a team with others. This chapter will break down the different stages and roles and responsibilities involved.
+When developing software, you usually do this for a client or a customer together with other engineers. Software Development Life Cycle (SDLC) is the process used by the software industry to design, develop and test high quality software. There are different phases in software development that when finished will result in working software. The SDLC describes different phases with an ordering of the phases, each phase produces deliverables required by the next phase. It’s important to understand the different stages as it allows you to make a step from local engineering on your laptop to working in a team with others. This chapter will break down the different stages and roles and responsibilities involved.
 
 There are 6 cycles for the development lifecycle that are important to distinguish. Some SDLC’s have one or two phases more but the overall concept remains the same, hence why we are only focusing on the following 6.
 
@@ -14,9 +14,9 @@ There are 6 cycles for the development lifecycle that are important to distingui
 ---
 ## Requirements gathering
 
-**Background**: The requirement is the first stage in the SDLC process. In order to build new software as an engineer you need to make sure you built what a customer actually wants to use. Most software developing firms agree that the first phase of the process begins by identifying a need. This  requirement is a wish from a customer that needs to be built. It’s usually the job of a Product manager / Product owner to define the requirements.
+**Background**: The requirement is the first stage in the SDLC process. In order to build new software as an engineer you need to make sure you built what a customer actually wants to use. Most software developing firms agree that the first phase of the process begins by identifying a need. This requirement is a wish from a customer that needs to be built. It’s usually the job of a Product manager / Product owner to define the requirements.
 
-**Output**: a list of requirements that make up the project. Requirements can contain a design of how the application should look like. Which buttons are on the page, what collor, what is the behaviour of the application etc.
+**Output**: a list of requirements that make up the project. Requirements can contain a design of how the application should look like. Which buttons are on the page, what colour, what is the behaviour of the application etc.
 **Who is responsible:**: A product owner or project manager (the roles will be explained later)
 
 ## Software Design
@@ -51,12 +51,11 @@ It's important to understand that making fundamental changes to the software arc
 **Who is responsible:** Engineers, either a (senior) software engineer of the team or an architect<br/>
 
 ## Software Development
-**Background**: In this phase the actual coding starts and the system is build. One or multiple engineer start to build the entire system writing code in a chosen programming language. The requirements and the high level architecture design usually serve as input to this phase. As there are usually more than one engineer involved, and in the future other engineers might need to work on the code you created it’s common that the engineers follow the coding guidelines of the company they are working for. 
+**Background**: In this phase the actual coding starts and the system is built. One or multiple engineers start to build the entire system writing code in a chosen programming language. The requirements and the high level architecture design usually serve as input to this phase. As there are usually more than one engineer involved, and in the future other engineers might need to work on the code you created. It’s common that the engineers follow the coding guidelines of the company they are working for. 
 During development sometimes shortcuts are taken to get faster to market. These shortcut are sometimes called technical debt. Wikipedia states; Technical Debt is a concept in software development that reflects the implied cost of additional rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer.<br/>
 
 **Output**: Written code <br/>
 **Who is responsible**: Engineers
-
 
 ## Testing
 **Background:** Testing is mentioned as a separate phase but usually already starts earlier. Tests are written during development to automate some of the testing. Generally in this phase the requirements used as the starting point of the application are used to test the functionality of the software. Any defects found are assigned to developers to get them fixed. As described above, testing is an integral part of the development phase as more and more tests can be automated.
@@ -79,8 +78,8 @@ In the explanation above you see the difference of a local development environme
 
 ### Different environment <br/>
 **Development:**  This is where the software is developed, this could be the laptop of the engineer or a shared server where multiple engineers are working on together.  <br/>
-**Testing:** this is the environment where the main testing is performed. From the 4 environments described this environment is the one that is sometimes optional. Testing could also be performed in both the development and Staging environment. <br/>
-**Staging:** This environment (sometimes called acceptance) is a near to identical version of production (usually without the customer data) to validate if everything is running in the right way. As this environment has the same setup as production things like performance testing (determining if the new release will reduce the maximum  throughput) or security testing (to determine if any vulnerabilities are introduced) are usually performed. <br/>
+**Testing:** this is the environment where the main testing is performed. From the 4 environments described this environment is the one that is sometimes optional. Testing could also be performed in both the development and staging environment. <br/>
+**Staging:** This environment (sometimes called acceptance) is a near to identical version of production (usually without the customer data) to validate if everything is running in the right way. As this environment has the same setup as production things like performance testing (determining if the new release will reduce the maximum throughput) or security testing (to determine if any vulnerabilities are introduced) are usually performed. <br/>
 **Production:** This is the environment that the customers are actually using.  <br/>
 
 ### Deployments
