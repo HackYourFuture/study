@@ -76,6 +76,7 @@
   - [Agile](/software-development/agile.md)
   - [Code Review](/software-development/code-review.md)
   - [Testing](/software-development/testing.md)
+  - [SDLC](/software-development/SDLC.md)
   - Roles
     - [Backend](/software-development/backend.md)
 - [Contribution guide](/contributing.md)
