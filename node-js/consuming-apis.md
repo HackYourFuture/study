@@ -31,7 +31,7 @@ Now, how do we go about doing this? Take the [RandomUser API](https://randomuser
 
 Have a look at the following video to see how you can make API calls from node.js:
 
-{% hyf-youtube src="https://youtu.be/ZtLVbJk7KcM" %}
+{% hyf-youtube src="https://www.youtube.com/watch?v=ZtLVbJk7KcM" %}
 
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
