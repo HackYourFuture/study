@@ -63,7 +63,7 @@ There are two things to remember about props:
 
 As we've learned in previous sections, in React data flows from component to component. However, this goes in an organized, tree-like manner. Take a look at the following diagram:
 
-![Component Hierarchy](./../assets/componenthierarchy.png)
+![Component Hierarchy](./assets/componenthierarchy.png)
 
 This is how we should think about creating our components: just like with the DOM tree we want to write components in a component tree. Here's how it could look in code:
 
