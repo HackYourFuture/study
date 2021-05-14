@@ -46,7 +46,7 @@ The navigation bar in the image is made up of 7 instances of the same component,
 
 Essentially, a component is a custom HTML element that we define ourselves. One of our volunteers explains it well in the following video:
 
-{% hyf-youtube src="https://youtu.be/pOTnbJdpEmk?t=93" %}
+{% hyf-youtube src="https://www.youtube.com/watch?v=pOTnbJdpEmk&t=93" %}
 
 The main thing to remember is that Components should follow the Single Responsibility Principle as much as possible. So each component should only have 1 responsibility.
 
