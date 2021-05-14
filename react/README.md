@@ -44,9 +44,9 @@ What do we need to think about when deciding something should be a component? We
 
 The navigation bar in the image is made up of 7 instances of the same component, let's call it `NavbarItem`. We make sure we know what the content is of each instance: in this case the names for each page in the website. And then we just pass those values to each instance.
 
-Essentially, a component is a custom HTML element that we define ourselves. One of our volunteers explains it well in the following video:
+Essentially, a component is a custom HTML element that we define ourselves. One of our volunteers explains it well in the following video (after 1:13):
 
-{% hyf-youtube src="https://www.youtube.com/watch?v=pOTnbJdpEmk&t=93" %}
+{% hyf-youtube src="https://www.youtube.com/watch?v=pOTnbJdpEmk" %}
 
 The main thing to remember is that Components should follow the Single Responsibility Principle as much as possible. So each component should only have 1 responsibility.
 
