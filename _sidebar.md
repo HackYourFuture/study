@@ -80,8 +80,11 @@
   - [Tools](/react/tools.md)
 - Testing
   - [Assertion](/testing/assertion.md)
+  - [Unit tests](/testing/unit-tests.md)
 - Tools
   - [Debuggers](/tools/debuggers.md)
+  - [Postman](/tools/postman.md)
+  - [Test framework](/tools/test-framework.md)
 - [Software development](/software-development/README.md)
   - [Agile](/software-development/agile.md)
   - [Code Review](/software-development/code-review.md)
