@@ -37,7 +37,7 @@ Prior to JavaScript ES6 (a version of JavaScript, the language itself is also st
 
 - read about [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 - read about [const](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Statements/const)
-- [let vs const] (http://wesbos.com/let-vs-const/)
+- read about [let vs const](http://wesbos.com/let-vs-const/)
 
 Here, we say: "declare variable foo and initialize it with the integer (number) 6".
 
