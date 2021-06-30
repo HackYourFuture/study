@@ -18,11 +18,11 @@ This chapter discusses the six steps of problem solving. This gives you a step-b
 
 The key to problem solving, is to really understand the problem. Write down the problem exactly or explain the problem to someone else, until you clearly understand what the problem is you are trying to solve. Many times, software developers start fixing problems without really knowing what the problem is (or what the client wants).
 
-###​ ​2. Divide
+### 2. Divide
 
 Big problems (or challenges) should be divided into smaller problems, so that the problems become easier to solve. What seemed like a big monster problem, now just is a lot of small monsters on top of each other. For instance, if you want to loop through an array and select certain data from it, these are already two steps (making a loop and selecting data). The more you are able to divide big problems into small ones, the better.
 
-###​ ​3. Finding the right technique
+### 3. Finding the right technique
 
 Now it is time to think about the techniques you know that could possibly help you to solve this problem (e.g. loops, if statements, filter, map etc.). If you can not think of an appropriate technique you will have to find it. In both cases Google will probably be your best friend. Remember, most developers spend hours per day on Google trying to find solutions to their problems, this is absolutely normal!
 
