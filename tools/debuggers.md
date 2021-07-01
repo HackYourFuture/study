@@ -84,3 +84,4 @@ There are many VSCode extensions that can help you understand debug your code as
 # Extra Reading
 - [The definitive guide to JavaScript Debugging](https://dev.to/atapas/the-definitive-guide-to-javascript-debugging-2021-edition-116n)
 - [How to use a debugger (Code language is python)](https://www.youtube.com/watch?v=7qZBwhSlfOo)
+- [Use debugger in chrome and VSCode](https://www.youtube.com/watch?v=AX7uybwukkk)
