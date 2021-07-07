@@ -5,7 +5,7 @@ When testing code, we want to separate the test code from the functional code as
 - Allowing you to run coverage which shows what lines of code are not run during the tests
 - Allowing you to mock aspects of the system or code to isolate your code further
 
-There are many different frameworks (Jest, Mocha, Jasmine), but overall their functionality is very similar, the syntax is a little different though so have a look at the official documentation of your framework to see the exact syntax you should be using.
+There are many different frameworks (`Jest`, `Mocha`, `Jasmine` for unit testing, `supertest` for API testing, `cypress` for UI testing), but overall their functionality is very similar, the syntax is a little different though so have a look at the official documentation of your framework to see the exact syntax you should be using.
 
 Have a look at the following video on the Jest framework which gives a nice quick overview of what we are talking about.
 
@@ -61,7 +61,9 @@ Have a look at the following article that explains the situation very well:
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
 
-- [Brad Traversy's guide](https://www.youtube.com/watch?v=7r4xVDI2vho)
+- [Brad Traversy's guide to Unit testing frameworks](https://www.youtube.com/watch?v=7r4xVDI2vho)
 - [Official Jest documentation](https://jestjs.io/)
 - [Official Mocha documentation](https://mochajs.org/)
 - [Official Jasmine documentation](https://jasmine.github.io/)
+- [Official supertest documentation](https://github.com/visionmedia/supertest)
+- [Official cypress documentation](https://docs.cypress.io/)

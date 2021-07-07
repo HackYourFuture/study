@@ -81,6 +81,7 @@
 - Testing
   - [Assertion](/testing/assertion.md)
   - [Unit tests](/testing/unit-tests.md)
+  - [UI tests](/testing/ui-tests.md)
 - Tools
   - [Debuggers](/tools/debuggers.md)
   - [Postman](/tools/postman.md)
