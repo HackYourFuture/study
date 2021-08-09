@@ -15,7 +15,7 @@ If you just can't get enough, here are some extra links that mentors/students ha
 
 - [Foundations of the Web](https://shawnr.gitbooks.io/foundations-of-the-web/)
 - [how it works, 5 min](https://www.youtube.com/watch?v=7_LPdttKXPc)
-- [Khan Academy's Intro](https://www.khanacademy.org/computing/computer-science/internet-intro)
+- [Khan Academy's Intro](https://www.khanacademy.org/computing/computer-science/internet-intro) X (https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet)
 - [The Odin Project's intro](https://www.theodinproject.com/courses/web-development-101/lessons/how-does-the-web-work)
 - [Time-Lapse Maps of the Internet](https://www.vox.com/a/internet-maps)
 - [internet for webdevs](https://www.youtube.com/watch?v=e4S8zfLdLgQ).  And there's a part two.
