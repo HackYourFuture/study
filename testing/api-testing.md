@@ -28,7 +28,7 @@ Have a look at the following video which shows how to use `jest` (the testing fr
 
 Something unique to API's is that it needs to be tested on the amount of requests it can handle. What if a lot of users request data at the same time? What happens when an API gets a lot of users over a longer period of time? And what if there is a spike of users?
 
-The terms used to answer these questions are called `Load` (dealing with an expected amount of users), `Stress` (what is the maximum amount of users), `Soak` (what happens after a long time) and `Spike` (how doe sthe API handle a huge increase in users). To get more information, have a look at the [following article](https://zoonou.com/resources/blog/performance-testing-techniques/) by the people at zoonou.
+The terms used to answer these questions are called `Load` (dealing with an expected amount of users), `Stress` (what is the maximum amount of users), `Soak` (what happens after a long time) and `Spike` (how does the API handle a huge increase in users). To get more information, have a look at the [following article](https://zoonou.com/resources/blog/performance-testing-techniques/) by the people at zoonou.
 
 Overall, with the introduction of cloud computing, this testing is handled by your cloud service provider, so it is out of the scope of this curriculum. But if you are wondering how to implement these tests, the following video gives a nice short introduction:
 
