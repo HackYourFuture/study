@@ -1,8 +1,10 @@
 # Promises
 
-For a video run through of what Promises are, look no further than the following video. There may be some syntax and concepts in there that you have not seen before (xhr request, axios) but those are used as an example for the promises:
+Let's start with a quick video that goes over everything in a very succinct way:
 
-{% hyf-youtube src="https://www.youtube.com/watch?v=MftH4t9vz7A" %}
+{% hyf-youtube src="https://www.youtube.com/watch?v=DHvZLI7Db8E" %}
+
+He gives a lot of information in a short amount of time, so let's go through some of the concepts in a more detailed way:
 
 ## Callback Hell
 
