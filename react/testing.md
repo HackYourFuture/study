@@ -50,7 +50,7 @@ Mocking is a way for you as the tester to abstract that something your component
 
 Have a look at the following video's that go over the basics of mocking.
 
-{% hyf-youtube src="https://www.youtube.com/watch?v=3PjdxjWK0F0" $}
+{% hyf-youtube src="https://www.youtube.com/watch?v=3PjdxjWK0F0" %}
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=ZbModC5pqv0" %}
 
