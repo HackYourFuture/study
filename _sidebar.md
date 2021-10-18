@@ -76,6 +76,7 @@
   - [API calls](/react/api-calls.md)
   - [Routing](/react/routing.md)
   - [Custom hooks](/react/custom-hooks.md)
+  - [Testing](/react/testing.md)
   - [Tools](/react/tools.md)
 - Testing
   - [Assertion](/testing/assertion.md)
