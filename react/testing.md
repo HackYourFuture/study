@@ -48,7 +48,7 @@ For the hard parts, there are a couple of things that `jest` provides to either 
 
 Mocking is a way for you as the tester to abstract that something your component uses. The term `mocking` means that instead of actually calling a particular function, we replace that function with one of our own. This allows us to specifically determine what will happen in the function!
 
-Have a look at the following video's that go over the basics of mocking.
+If you are unsure about what mocking means, have a look at the following video's that go over the basics of mocking.
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=3PjdxjWK0F0" %}
 
