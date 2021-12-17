@@ -1,6 +1,6 @@
 # Designing API's
 
-In the general [API section](/api.md) we looked at API's from the frontend, but let's go a little deeper into what an API is and more specifically: how to actually design one. Let's first start by going over what an API is and introduce a new analogy:
+In the general [API section](/the-internet/api.md) we looked at API's from the frontend, but let's go a little deeper into what an API is and more specifically: how to actually design one. Let's first start by going over what an API is and introduce a new analogy:
 
 ## Analogy
 Application Programming Interface (API) in its simplest form is the part of an application that allows users to make use of its functionality. However, instead of a beautiful-looking user interface, it's usually some kind of URL (which in this context is often called an `endpoint`).
