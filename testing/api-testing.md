@@ -1,6 +1,6 @@
 # API Testing
 
-Testing API's is similar to [ui testing](./ui-tests.md). Where the ui tests are seen as the integration tests for your frontend, API tests are the integration tests for the backend.
+Testing API's is similar to [ui testing](ui-tests.md). Where the ui tests are seen as the integration tests for your frontend, API tests are the integration tests for the backend.
 
 When writing API tests, you can think of your API like a black box, where the internal workings of the code does not matter to you. You want to put yourself in the shoes of the user of your API and make sure that the end points of your API work as expected.
 
