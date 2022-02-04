@@ -71,8 +71,8 @@ This is how we should think about creating our components: just like with the DO
 const App = () => {
   return (
     <Contacts>
-      // The Contacts component has 3 children: AddContact, ContactList and
-      SearchBar
+      // The Contacts component has 3 children: 
+      // AddContact, ContactList and SearchBar
       <AddContact>
         // This component has 1 child: AddContactForm
         <AddContactForm />
