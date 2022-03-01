@@ -32,5 +32,10 @@ The following video explains how this works:
 
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
 
-- [Official documentation](https://reactrouter.com/web/guides/quick-start)
-- [v5 tutorial]({https://www.youtube.com/watch?v=Law7wfdg_ls)
+- [Official documentation V5](https://reactrouter.com/web/guides/quick-start)
+- [Official documentation V6](https://reactrouter.com/docs/en/v6/getting-started/tutorial)
+
+- [v5 tutorial](https://www.youtube.com/watch?v=Law7wfdg_ls)
+- [v6 The Net Ninja tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h7F1LWaQ7MAI8ptg5VjvxJ)
+
+- [Extra React Protected Routes - Dave Gray](https://www.youtube.com/watch?v=oUZjO00NkhY)

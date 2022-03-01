@@ -11,7 +11,13 @@ Why do you need to know all of this? HTTP is the foundation of how client-server
 
 Have a look at the following videos that explain the client-server interactions:
 
-{% hyf-youtube src="https://www.youtube.com/watch?v=eesqK59rhGA" %}
+{% hyf-youtube src="https://www.youtube.com/watch?v=tkfVQK6UxDI" %}
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=RsQ1tFLwldY" %}
 
+---
+
+# Extra reading
+If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
+
+- [Http and the Web](https://www.youtube.com/watch?v=eesqK59rhGA)
