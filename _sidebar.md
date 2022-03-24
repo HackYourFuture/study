@@ -80,6 +80,7 @@
   - [NoSQL](/databases/nosql/README.md)
     - [MongoDB](/databases/nosql/mongodb/README.md)
       - [Basic operations](/databases/nosql/mongodb/basic-operations.md)
+      - [Embedded vs Normalised](/databases/nosql/mongodb/embedded-vs-normalised.md)
 - [React](/react/README.md)
   - [State & props](/react/state-and-props.md)
   - [Hooks provided by React](/react/react-hooks.md)
