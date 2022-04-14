@@ -1,6 +1,6 @@
 # Advanced operations
 
-In this section we will go over some of the more advanced operations that you may need to grab the data that you want from your mongoDB. We will highlight the ones we think you will be using more often, but for a full list of all the options [the documentation](https://www.mongodb.com/docs/manual/reference/method/js-collection/) is always a great place to look!
+In this section we will go over some of the more advanced operations that you may need to grab the data that you want from your MongoDB. We will highlight the ones we think you will be using more often, but for a full list of all the options [the documentation](https://www.mongodb.com/docs/manual/reference/method/js-collection/) is always a great place to look!
 
 ## Sort
 
@@ -11,7 +11,7 @@ client
   .db("youtube")
   .collection("videos")
   .find()
-  .sort({ "releasedDate": -1 });
+  .sort({ releasedDate: -1 });
 ```
 
 This code will get the data out of the `videos` collection in `youtube` database and give it back sorted `DESCENDING` on the `releasedDate` property. If we want to sort on which videos were released first we would provide a `1` as the value which we call `ASCENDING`.
@@ -23,7 +23,7 @@ client
   .db("youtube")
   .collection("videos")
   .find()
-  .sort({ "releasedDate": -1, "title": 1 });
+  .sort({ releasedDate: -1, title: 1 });
 ```
 
 This will first sort the videos on the `releasedDate` with the latest videos first and then on the `title` field in alphabetical order (a-z). Easy!
@@ -37,7 +37,7 @@ client
   .db("youtube")
   .collection("videos")
   .find()
-  .sort({ "releasedDate": -1, "title": 1 })
+  .sort({ releasedDate: -1, title: 1 })
   .limit(20);
 ```
 

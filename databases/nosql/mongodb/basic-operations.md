@@ -1,6 +1,6 @@
 # Basic operations
 
-In this section we will go over the basics of connecting, creating, updating and deleting data from a document-oriented database using mongoDB. The following video from mongoDB itself does an amazing job at this:
+In this section we will go over the basics of connecting, creating, updating and deleting data from a document-oriented database using MongoDB. The following video from MongoDB itself does an amazing job at this:
 
 _Note: she talks about cursors, sorting and limits for the multiple find operations. This is quite complex and we will have a special section about this in the advanced operations. For now try to follow along, but don't worry too much if that part goes too fast_
 
@@ -18,7 +18,7 @@ As there is a lot of different commands used in the above video, we've created a
 | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [findOne](https://docs.mongodb.com/manual/reference/method/db.collection.findOne/)       | Find a document. Note that it will return the **first** document it finds (same as the `find` function of a JavaScript Array)                |
 | [find](https://docs.mongodb.com/manual/reference/method/db.collection.find/)             | Find **all** documents that adhere to the filter provided                                                                                    |
-| [insertOne](https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/)   | Create a new document. Remember that the \_id field will be filled in by mongoDB. Overall it is best to just let mongoDB handle all of that! |
+| [insertOne](https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/)   | Create a new document. Remember that the \_id field will be filled in by MongoDB. Overall it is best to just let MongoDB handle all of that! |
 | [insertMany](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/) | Create multiple documents (an array of objects)                                                                                              |
 | [updateOne](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/)   | Update the first document that matches the filter                                                                                            |
 | [updateMany](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/) | Update **all** documents that match the filter                                                                                               |
@@ -27,9 +27,9 @@ As there is a lot of different commands used in the above video, we've created a
 
 ## Filters
 
-You will have noticed that for a lot of these queries you can provide a `filter` parameter. This is how to write the `WHERE` part of your SQL queries. The full documentation for this can be found [here](https://docs.mongodb.com/manual/reference/operator/query/) but let's look at some common examples and mistakes when working with mongoDB:
+You will have noticed that for a lot of these queries you can provide a `filter` parameter. This is how to write the `WHERE` part of your SQL queries. The full documentation for this can be found [here](https://docs.mongodb.com/manual/reference/operator/query/) but let's look at some common examples and mistakes when working with MongoDB:
 
-**To find an element by a specific id**. Note that we have to use the [ObjectId](https://docs.mongodb.com/manual/reference/method/ObjectId/) notation as that is what mongoDB uses for its ids.
+**To find an element by a specific id**. Note that we have to use the [ObjectId](https://docs.mongodb.com/manual/reference/method/ObjectId/) notation as that is what MongoDB uses for its ids.
 
 ```js
 client
@@ -40,7 +40,7 @@ client
   });
 ```
 
-**To find all elements after a specific date**. Note the `$gte` notation, this is a common way for mongoDB to define properties in objects that it does something with. Next to `$gte` you can use `$gt`, `$lte`, `$lt` to signify `greater than`, `less than or equal` or `less than` respectively. There are many other options, have a look at the documentation.
+**To find all elements after a specific date**. Note the `$gte` notation, this is a common way for MongoDB to define properties in objects that it does something with. Next to `$gte` you can use `$gt`, `$lte`, `$lt` to signify `greater than`, `less than or equal` or `less than` respectively. There are many other options, have a look at the documentation.
 
 ```js
 client
