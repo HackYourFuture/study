@@ -66,5 +66,6 @@ its own object in the memory. Let us continue the previous example of array of e
 ]
 
 ## Further reading
-[This Medium article](https://medium.com/@manjuladube/understanding-deep-and-shallow-copy-in-javascript-13438bad941c)
-provides a possible implementation of deep cloning in pure JS. 
+* [This Medium article](https://medium.com/@manjuladube/understanding-deep-and-shallow-copy-in-javascript-13438bad941c)
+provides a possible implementation of deep cloning in pure JS.
+* [structuredClone] (https://developer.mozilla.org/en-US/docs/Web/API/structuredClone) is also available in Node version 17.0.0 and some browsers.
