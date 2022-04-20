@@ -11,6 +11,7 @@ React adds a new layer to your code that solves a lot of problems but does add c
 Important is what The Net Ninja says in the end: 'The best way to become familiar with this is to dive in and play around with it'!
 
 Download the extensions here:
+
 - [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/react-devtools/)
 
