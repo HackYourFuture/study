@@ -9,22 +9,22 @@ In this section we will go into how to use transactions in MongoDB. The MongoDB 
 Let's have a look at some example code. In this function we want to transfer credits from one account to another:
 
 ```js
-async function transferCredits(fromUserId, toUserId, amount) {
-  const usersCollection = client.db("db_name").collection("users");
+async function transferCredits(fromAccountId, toAccountId, amount) {
+  const accountsCollection = client.db("billing").collection("accounts");
   const session = client.startSession();
 
   try {
     session.withTransaction(async () => {
       // Remove from fromUser
-      await usersCollection.updateOne(
-        { _id: fromUserId },
+      await accountsCollection.updateOne(
+        { _id: fromAccountId },
         { $inc: { credits: amount * -1 } },
         { session }
       );
 
       // Add to toUser
-      await usersCollection.updateOne(
-        { _id: toUserId },
+      await accountsCollection.updateOne(
+        { _id: toAccountId },
         { $inc: { credits: amount } },
         { session }
       );

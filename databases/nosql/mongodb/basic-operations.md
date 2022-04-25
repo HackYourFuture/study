@@ -27,14 +27,14 @@ As there is a lot of different commands used in the above video, we've created a
 
 ## Filters
 
-You will have noticed that for a lot of these queries you can provide a `filter` parameter. This is how to write the `WHERE` part of your SQL queries. The full documentation for this can be found [here](https://docs.mongodb.com/manual/reference/operator/query/) but let's look at some common examples and mistakes when working with MongoDB:
+You will have noticed that for a lot of these queries you can provide a `filter` parameter. This is how to write the `WHERE` part of your SQL queries. The full documentation for this can be found [here](https://docs.mongodb.com/manual/reference/operator/query/) but let's look at some common examples and mistakes when working with MongoDB in the context of a database that stores shows, where a show means either a movie or a series:
 
 **To find an element by a specific id**. Note that we have to use the [ObjectId](https://docs.mongodb.com/manual/reference/method/ObjectId/) notation as that is what MongoDB uses for its ids.
 
 ```js
 client
-  .db("db_name")
-  .collection("collection_name")
+  .db("shows")
+  .collection("movies")
   .findOne({
     _id: ObjectId("4ecc05e55dd98a436ddcc47c"),
   });
@@ -44,24 +44,24 @@ client
 
 ```js
 client
-  .db("db_name")
-  .collection("collection_name")
+  .db("shows")
+  .collection("movies")
   .find({
-    createdAt: {
+    releasedDate: {
       $gte: new Date("2000-01-01"),
     },
   });
 ```
 
-**To find all elements with a status in a specific list**. Here we want to use the `$in` option, that allows you to specify that a certain field has a value that is one of the ones in the array. This example will return all elements where the `type` field is either `pending` or `open`.
+**To find all elements with a status in a specific list**. Here we want to use the `$in` option, that allows you to specify that a certain field has a value that is one of the ones in the array. This example will return all elements where the `status` field is either `In Production` or `Post Production`.
 
 ```js
 client
-  .db("db_name")
-  .collection("collection_name")
+  .db("shows")
+  .collection("movies")
   .find({
-    type: {
-      $in: ["pending", "open"],
+    status: {
+      $in: ["In Production", "open"],
     },
   });
 ```
@@ -71,26 +71,26 @@ client
 Projection is the process of defining what fields you want to get back from your query rather than getting the whole document back. This can be very useful to only grab the data you are interested in without having to do this yourself. The full documentation can be found [here](https://docs.mongodb.com/manual/reference/method/db.collection.find/#projection), let's have a look at an example:
 
 ```js
-client.db("db_name").collection("collection_name").find(
+client.db("shows").collection("movies").find(
   {},
   {
-    name: true,
-    status: true,
+    title: true,
+    tagline: true,
   }
 );
 ```
 
 _Note that it is the **second** parameter, so if you still want to find everything you need to provide an empty object in the first parameter._
 
-In this example we are only getting the `name` and `status` fields of our database. Now if you run this code you will find that you always get the `_id` field for free. If you absolutely do not want the `_id` field then you need to explicitely say you don't want it, like so:
+In this example we are only getting the `name` and `status` fields of our database. Now if you run this code you will find that you always get the `_id` field for free. If you absolutely do not want the `_id` field then you need to explicitly say you don't want it, like so:
 
 ```js
-client.db("db_name").collection("collection_name").find(
+client.db("shows").collection("movies").find(
   {},
   {
     _id: false,
-    name: true,
-    status: true,
+    title: true,
+    tagline: true,
   }
 );
 ```

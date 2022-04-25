@@ -19,8 +19,8 @@ The MongoDB query would look something like this:
 
 ```js
 client
-  .db("db_name")
-  .collection("collection_name")
+  .db("shows")
+  .collection("movies")
   .find()
   .sort({ title: 1 })
   .limit(20)
@@ -39,8 +39,8 @@ The other common way to implement pagination is using the `cursor-based` approac
 const { next } = req.query;
 
 const items = await client
-  .db("db_name")
-  .collection("collection_name")
+  .db("shows")
+  .collection("movies")
   .find({
     title: { $gt: next || "" },
   })

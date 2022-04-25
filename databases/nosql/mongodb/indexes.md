@@ -9,17 +9,14 @@ All of your collections will always have the `_id` field as an index. This is so
 You can add more fields yourself by running the following command:
 
 ```js
-client
-  .db("youtube")
-  .collection("videos")
-  .createIndex({
-    releasedDate: -1
-  });
+client.db("shows").collection("movies").createIndex({
+  releasedDate: -1,
+});
 ```
 
-This will create an index on descending order for the `releasedDate` field in the `videos` collection. That means that further queries that want to sort that information will now run against an indexed database and be way faster. This also adds an index on the field itself so a `find` command on the `releasedDate` field will also be faster.
+This will create an index on descending order for the `releasedDate` field in the `movies` collection. That means that further queries that want to sort that information will now run against an indexed database and be way faster. This also adds an index on the field itself so a `find` command on the `releasedDate` field will also be faster.
 
-But remember, adding new videos then also requires an extra update of an index so writing to this collection will take longer.
+But remember, adding new movies then also requires an extra update of an index so writing to this collection will take longer.
 
 ## Multiple fields
 
@@ -27,9 +24,9 @@ Creating an index on multiple fields is called a `Compound index`. This is the s
 
 ```js
 client
-  .db("youtube")
-  .collection("videos")
-  .createIndex({ releasedDate: -1, title: 1 })
+  .db("shows")
+  .collection("movies")
+  .createIndex({ releasedDate: -1, title: 1 });
 ```
 
 If we would now want to sort our collection on both the `releasedDate` and `title` field in this way the index will help it become a fast query, fast enough for YouTube!
