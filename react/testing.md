@@ -88,4 +88,3 @@ If you just can't get enough, here are some extra links that mentors/students ha
 - [Enzyme vs React testing library](https://www.youtube.com/watch?v=SyAYO5w-nUI)
 - [React official testing docs](https://reactjs.org/docs/testing.html). Although it gives good information, it is focused on how the testing environment is set up and why. The `create-react-app` command and your employer will have this all set up for you so practically this is extra information. Have a look through if you find this interesting, however!
 - [jest mocking documentation](https://jestjs.io/docs/mock-functions)
--
