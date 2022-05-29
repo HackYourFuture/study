@@ -1,5 +1,26 @@
 # Operators
 
+## Arithmetic operators
+
+* Addition `+`
+* Subtraction `-`
+* Multiplication `*`
+* Division `/`
+* Remainder (sometimes called modulo) `%`
+<br>Returns the remainder left over after you've shared the left number out into a number of integer portions equal to the right number.
+
+```js
+8 + 9 // -> 17, adds two numbers together.
+20 - 12 // -> 8, subtracts the right number from the left.
+3 * 4 // -> 12, multiplies two numbers together.
+10 / 5 // -> 2, divides the left number by the right.
+8 % 3 /// -> 2, as three goes into 8 twice, leaving 2 left over.
+```
+
+{% hyf-youtube src="https://www.youtube.com/watch?v=qjzgz7bEEXM" %}
+
+More about [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#.25_.28Modulus.29)
+
 ## Comparison operators
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=Opl-KwCBxRg" %}
@@ -46,27 +67,6 @@ We strongly recommend that you always use the strict form when comparing for equ
 ```
 
 More about [comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
-
-## Arithmetic operators
-
-* Addition `+`
-* Subtraction `-`
-* Multiplication `*`
-* Division `/`
-* Remainder (sometimes called modulo) `%`
-<br>Returns the remainder left over after you've shared the left number out into a number of integer portions equal to the right number.
-
-```js
-8 + 9 // -> 17, adds two numbers together.
-20 - 12 // -> 8, subtracts the right number from the left.
-3 * 4 // -> 12, multiplies two numbers together.
-10 / 5 // -> 2, divides the left number by the right.
-8 % 3 /// -> 2, as three goes into 8 twice, leaving 2 left over.
-```
-
-{% hyf-youtube src="https://www.youtube.com/watch?v=qjzgz7bEEXM" %}
-
-More about [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#.25_.28Modulus.29)
 
 ## Logical operators
 
