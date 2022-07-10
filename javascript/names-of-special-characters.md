@@ -44,4 +44,4 @@ Do you think there is one (or more) missing? Make a PR with your additions 🙃!
 
 `-` Dash `-`
 
-See also the page on [Operators](./operators.md).
+See also the page on [Operators](https://study.hackyourfuture.net/#/javascript/operators).
