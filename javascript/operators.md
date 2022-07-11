@@ -132,7 +132,7 @@ x = x + 1;
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=LFubbHSfekM" %}
 
-Also check out [special characters and their names](names_of_special_characters.md)
+Also check out [special characters and their names](https://hackyourfuture.github.io/study/#/javascript/names-of-special-characters)
 
 
 # Extra reading
