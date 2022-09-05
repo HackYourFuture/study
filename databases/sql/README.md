@@ -16,15 +16,15 @@ For example numbers like 42, 1636 or -345 are all associated with the type `int`
 
 The following is a list of the most frequently used data types.
 
-| Type       | Description                                   | Example Value           |
-| ---------- | --------------------------------------------- | ----------------------- |
-| int        | Numbers                                       | 42                      |
-| float      | Decimal numbers                               | 3.14                    |
-| varchar(N) | String with variable maximum of N characters  | "Dragon"                |
-| text       | String with fixed maximum of 65535 characters | "Positive"              |
-| datetime   | Store date and time without timezone          | 2019-01-01 22:10:23     |
-| timestamp  | Store date with timezone (e.g. last login)    | 2019-01-01 22:10:23 UTC |
-| BLOB       | Store binary files                            | an image                |
+| Type       | Description                                   | Example Value             |
+| ---------- | --------------------------------------------- | ------------------------- |
+| int        | Numbers                                       | 42                        |
+| float      | Decimal numbers                               | 3.14                      |
+| varchar(N) | String with variable maximum of N characters  | "Dragon"                  |
+| text       | String with fixed maximum of 65535 characters | "Positive"                |
+| datetime   | Store date and time without timezone          | `2019-01-01 22:10:23`     |
+| timestamp  | Store date with timezone (e.g. last login)    | `2019-01-01 22:10:23 UTC` |
+| BLOB       | Store binary files                            | an image                  |
 
 There are many more data types. You can read about them [here](https://www.w3resource.com/mysql/mysql-data-types.php).
 
