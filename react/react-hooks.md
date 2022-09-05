@@ -21,7 +21,9 @@ There are quite a variety of use cases that the hook helps us with:
 - Fetching data when a prop or state changes
 - Setting up and removing listeners (either on the DOM or to an API)
 
-Have a look at the official documentation [here](https://reactjs.org/docs/hooks-effect.html) to go into more detail.
+Have a look at the following articles that help explain this complex but very powerful hook:
+- [The official documentation](https://reactjs.org/docs/hooks-effect.html)
+- [A visual guide to useEffect](https://alexsidorenko.com/blog/useeffect/)
 
 ## useRef
 
