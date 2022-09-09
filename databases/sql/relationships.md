@@ -1,8 +1,7 @@
 # What are the 3 types of relationships?
 
-There are three specific types of relationships that can exist between a pair of tables:
-one-to-one, one-to-many, and many-to-many. The tables participate in only one type of relationship at any given time. (You'll rarely need to change the type of relationship between a pair of tables. Only major changes in either of the table's structures could
-cause you to change the relationship.)
+There are three types of relationships that can exist between two tables:
+one-to-one, one-to-many/many-to-one, and many-to-many. A table can have one-to-many relationship with another table and have a many-to-many relationship with yet another table. E.g. `Department` table has one-to-many relationship with `Employee` but `Project` has many-to-many relationship with `Employee` table.
 
 ## One-to-One (1-1)
 
@@ -10,19 +9,18 @@ A pair of tables bears a one-to-one relationship when a single record in the fir
 
 For example: each teacher has a personal account and a personal inbox (not more than one per account) and each inbox only belongs to a single account. So there is a One-to-One relationship between entity account and entity inbox.
 
-## One-to-many (1-M)
+## One-to-many (1-M) or Many-to-one (M-1)
 
 A one-to-many relationship exists between two tables when a single record in the first table can be related to **one or more** records in the second table, but a single record in the second table can be related to only one record in the first table. To implement this
-relationship, we should put a foreign key in Many side that is referring to One side.
+relationship, we add primary key of the `One-side` of the relationship into the table that is the `Many-side` of the relationship. In the `Many-side` of the relationship, this acts as the foreign key.
 
-For example: each mentor can help some students, but in reverse direction each student at one time has just one mentor. So there is a One-to-many relationship between entity student and entity mentor.
+For example: Mentor-Student is a 1 mentor - many students relationship. Thus, Primary key of mentors table (say `mentor_id`) should be added to the students table. This `metor_id` will be a foreign key that will refer to the primary key of the `mentor` table.
 
 ## Many-to-Many (M-M)
 
-A pair of tables bears a many-to-many relationship when a single record in the first table can be related to one or more records in the second table and a single record in the second table can be related to one or more records in the first table. To implement this relationship, we should create an extra table. This concept is called a junction table. The table should (at least) contain the primary keys from both entities.
+A pair of tables bears a many-to-many relationship when a single record in the first table can be related to one or more records in the second table and a single record in the second table can be related to one or more records in the first table. To implement this relationship, we should create an extra table. This table is called a junction table or a relationship table. The table should (at least) contain the primary keys from both entities.
 
-For example: each teacher will teach a course to multiple classes
-and these classes will be following several courses from different teachers. So there is a Many-to-Many relationship between the entities course and class
+For example: Projects-Employees is a many employees (work on) many projects relationship. We can create a `project_allocation` table that contains primary keys of both tables say `project_id` and `employee_id`
 
 To learn more about relationships, check out the following:
 
