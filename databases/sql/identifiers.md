@@ -1,15 +1,15 @@
-# What’s an identifier (keys)?
+# What’s an identifier (key)?
 
-A key or identifier is a single or combination of multiple fields in a table which is used to fetch or retrieve records/data-rows from data table according to the condition/requirement.
+A key or an identifier is a single or combination of multiple fields in a table which is used to identify rows from the table.
 
-Keys are also used to create a relationship among different database tables or views.
+Keys can be used to create a relationships between different database tables.
 
 ## Primary Key
 
-The PRIMARY KEY constraint uniquely identifies each record in a table.
-Primary keys must contain UNIQUE values, and cannot contain NULL values. A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).
+The PRIMARY KEY uniquely identifies each record in a table.
+Primary keys must contain UNIQUE values, and cannot contain NULL values. A table can have only ONE primary key but this primary key can consist of single or multiple columns (fields).
 
-To define a Primary Key while creating the table, you should determine the attribute in Column definition part:
+To define a Primary Key you can use the following syntax:
 
 ```sql
 CREATE TABLE teachers (
@@ -32,7 +32,7 @@ ALTER TABLE teachers ADD PRIMARY KEY (teacher_number);
 
 A FOREIGN KEY is a key used to link two tables together. This KEY is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table.
 
-To define a Foreign Key while creating the table, you can use the below query:
+To define a Foreign Key while creating the table, you can use the following syntax:
 
 ```sql
 CREATE TABLE students (
@@ -47,8 +47,9 @@ CREATE TABLE students (
 
 A foreign key does two useful things;
 
-- It will verify if the related record exists, so you can't insert a row referencing a non-existing relation.
-- It will create an index on this column, giving faster results when querying on the particular column.
+- It will guarantee referential integrity: When a row in a table refers to a corresponding row in another table, then that corresponding row will
+exist.
+- It will create an index on this column, giving faster results when querying on this particular column.
 
 or you can add a foreign key later:
 
@@ -61,7 +62,7 @@ ALTER TABLE students
 
 The unique key is quite similar to a primary key, they both serve to check the uniqueness of a column value.
 The difference is that there can be only a single primary key, to define the record, and multiple unique keys, to define unique values.
-Columns with a unique constraint can be null unlike primary keys.
+Columns with a unique constraint can be NULL unlike primary keys.
 Foreign keys can only reference primary keys and not unique keys.
 
 ```sql
@@ -71,13 +72,13 @@ ALTER TABLE teachers ADD UNIQUE KEY (email);
 ## Composite Key
 
 A composite key is a key composed of two or more columns in a table that can be used to uniquely identify
-each row in the table when the columns are combined **uniqueness is guaranteed**, but when it taken individually
+each row in the table when the columns are combined **uniqueness is guaranteed**, but when taken individually
 it does not guarantee uniqueness.
 
-For example in a database with students from several schools you'd expect the same `student_number` across schools.
+For example, in a database with students from several schools you'd expect the same `student_number` across schools.
 
 ```sql
-CREATE TABLE students (
+CREATE TABLE students_across_schools (
     student_number INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(50),
     school_id INT,
