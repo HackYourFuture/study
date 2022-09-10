@@ -14,7 +14,7 @@ async function transferCredits(fromAccountId, toAccountId, amount) {
   const session = client.startSession();
 
   try {
-    session.withTransaction(async () => {
+    await session.withTransaction(async () => {
       // Remove from fromUser
       await accountsCollection.updateOne(
         { _id: fromAccountId },
