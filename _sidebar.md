@@ -73,7 +73,7 @@
     - [Relationships](/databases/sql/relationships.md)
     - [Domain modeling](/databases/sql/domain-modeling.md)
     - [Indexes](/databases/sql/indexes.md)
-    - [Advanced SQL commands](/databases/sql/advanced-sql.md)
+    - [SQL clauses](/databases/sql/advanced-sql.md)
     - [Normalization](/databases/sql/normalization.md)
     - [Transactions](/databases/sql/transactions.md)
     - [SQL Injection](/databases/sql/sql-injection.md)
