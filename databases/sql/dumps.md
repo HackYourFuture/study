@@ -1,6 +1,6 @@
 # What is a database dump?
 
-A database `dump` (aka SQL dump) contains a record of the table structure and/or the data from a database and is usually in the form of a list of SQL statements. (An example file named `world.sql` is present in the Week1 folder, look for `databases`)
+A database `dump` (aka SQL dump) contains a record of the table structure and the data from a database and is usually in the form of a list of SQL statements. ([An example file named world.sql](https://github.com/HackYourFuture/databases/blob/master/Week1/world.sql) is present in the `Week1` folder)
 
 1. Collecting the dump of an existing database from terminal `mysqldump -uroot -p database_name > dump-file.sql`
 2. Applying the dump from mysql command prompt (`mysql>`) `source /path/to/the/dump/file`
