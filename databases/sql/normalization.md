@@ -86,7 +86,7 @@ This table could be converted to 1NF as follows:
 In real life, you actually need to
 
 - DROP column Contact.
-- ADD column Phone with the type int.
+- ADD column Phone with the type varchar(N), choose N wisely.
 - ADD column Email with the type varchar(50).
 
 #### 2NF
@@ -107,7 +107,7 @@ Consider the following table (employee-project M-M relationship table).
 2NF is violated here because
 
 ```
-porj_budget (non prime column)
+proj_budget (non prime column)
 proj_no => proj_budget (functionally dependent on proj_no)
 proj_no (It is part of the candidate key)
 emp_no + proj_no (is a candidate key)
