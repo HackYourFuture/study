@@ -1,8 +1,8 @@
 # SQL injection
 
-Some SQL clients accept input from the user to fabricate the queries.
+Some SQL clients accept input from the user to construct queries.
 A malicious user can tweak the input to acquire more information from the database or
-to destroy the database (literally!). Demo program `sql-injection.js` is in the `Week3` folder.
+to destroy the database (literally!). See [this Demo program](https://github.com/HackYourFuture/databases/blob/master/Week3/sql-injection.js) `sql-injection.js` in the `Week3` folder.
 
 Consider the following query `SELECT name, salary FROM employees where id = X`.
 
@@ -24,13 +24,16 @@ To prevent SQL injection you have to use prepared statements. The diagram below 
 
 ![SQL injection](https://pics.me.me/prepared-statements-sol-injections-let-me-in-adult-swim-sol-62056759.png)
 
-With prepared statements, we instruct the database to treat certain parts of a query only as a string and nothing else. Even if the string is a valid command it will not be evaluated or executed. To make this as safe as possible the SQL query is sent first, followed by the parts which need to be treated as strings. The syntax for prepared statements is:
+With prepared statements, we instruct the database to treat certain parts of a query only as a string and nothing else. Even if the string is a valid command it will not be evaluated or executed. The syntax for prepared statements is:
 
+Make sure that the database already contains the `employees` table
 ```sql
-PREPARE example FROM SELECT name, salary FROM employees where id = ?;
+PREPARE example FROM 'SELECT name, salary FROM employees where id = ?';
 SET @id = 5;
 EXECUTE example USING @id
 ```
+
+If you try to provide an extra command in the input `set @id='2; show tables'`, it will not be executed.
 
 To increase your understanding check the following materials:
 
