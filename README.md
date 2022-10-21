@@ -31,6 +31,7 @@ From there you can directly send a patch or PR.
 
 This book is fully written in Markdown. Markdown is so important to open source development that it deserves to be on this front page, and simple enough that you'll never need more than a few references:
 
-* [Markdown Cheat Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdown Cheat Sheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)+
+* [Github Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)+
 * [GitHub Emojis](https://jzeferino.github.io/AllGithubEmojis/)
 * [emojis in commits](https://gitmoji.carloscuesta.me/)
