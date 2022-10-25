@@ -74,4 +74,6 @@ Learn more about `JSX` here:
 ### DOM management
 When you want to write single page applications in vanilla JS you will notice that DOM management can be a headache. The reason is that you have to write the code that takes the DOM from the place it is now to where you want it to be.
 
-React takes this management away from you. This means you just need to define how the DOM should look now (using your components and JSX) and React will do the rest! Awesome!
+React takes this management away from you. This means you just need to define how the DOM should look now (using your components and JSX) and React will do the rest! Awesome! The following video goes into this and a few other important things, it goes a little deep in places that is a little too much now so don't worry if you don't understand everything the first time. You can check it out again in a couple of weeks and then you will see that you will even understand the difficult parts!
+
+{% hyf-youtube src="https://www.youtube.com/watch?v=i793Qm6kv3U" %}
