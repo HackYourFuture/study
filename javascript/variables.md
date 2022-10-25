@@ -13,7 +13,7 @@ The concept of a `variable` is a central concept within programming. It's applie
 
 A variable always contains a `value`: the piece of information that you want to save and refer to at a later stage. Read more about this here:
 
-- [Values](./javascript/values.md)
+- [Values](./values.md)
 
 When creating variables, it's important to think about the right name to give it. It should always reflect what "type" of data it contains and what its purpose is. You (and other developers that will read your code) should be able to read a variable name and know what its purpose is.
 
