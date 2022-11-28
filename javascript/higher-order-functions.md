@@ -63,9 +63,24 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(numbersPlusTwo);
 ```
 
-Can you see why the array function is the better way to go?
+Can you see why the array function is the better way to go? They make your life so much easier so it is a good idea to make use of them as much as possible
 
-When it comes to higher order functions, the es6 function syntax is very useful, have a look at them in the es6 section [here](./es6.md)
+When it comes to higher order functions, the es6 arrow function syntax is very useful, have a look at them in the es6 section [here](./es6.md). 
+
+#### When to use which array?
+
+When you look at all of functions you can use on an array on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) it is easy to get overwhelmed. As a beginner we suggest to get very familiar with the following functions:
+
+- [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) to do something with every element in the array
+- [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) to create a new array with only certain elements in it
+- [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) and [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) to check if `every` or `at least one` element satisfies your condition
+- [find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) to find the first element that satisfies your condition. If it cannot find it it will return `undefined`
+
+The below diagram (from a great article in ui-dev [here](https://www.ui-dev.in/2021/08/must-know-array-methods-in-javascript.html)) is very useful to visualise this and adds a few more less used ones:
+
+![image](https://user-images.githubusercontent.com/23367061/204262548-66698045-0e49-4ea6-8c95-a893ccd50776.png)
+
+If you are unsure what you need, then [this flowchart](https://github.com/HackYourFuture/study/files/10103031/civilised_guide_to_javascript_array_methods.pdf) helps you find the right function.
 
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
