@@ -48,5 +48,5 @@ Whenever you are deciding which way to use, only think about the readability of 
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
 
-- [More about the Control flow](https://dev.to/mugas/control-flow-in-javascript-246l)
+
 - [More about the ternary operator](https://www.javascripttutorial.net/javascript-ternary-operator/)
