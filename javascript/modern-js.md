@@ -246,6 +246,7 @@ With the `async/await` keywords, we don't get a `catch` function to use. So inst
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
 
+* [ES6 JavaScript tutorial](https://youtu.be/WZQc7RUAg18)
 * [Traversy Crash Course](https://www.youtube.com/playlist?list=PLillGF-RfqbZ7s3t6ZInY3NjEOOX7hsBv)
 * [ES6 tutorial](https://www.programiz.com/javascript/ES6)
 
