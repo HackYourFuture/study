@@ -48,7 +48,7 @@ The right join will keep all records from the joined table and discard records, 
 
 Check out the following to get a more visual idea of what `joins` are:
 
-{% hyf-youtube src="https://www.youtube.com/watch?v=tvMGoxmQzgQ" %}
+{% hyf-youtube src="https://www.youtube.com/watch?v=9yeOJ0ZMUYw" %}
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=efpFCd8iFAQ" %}
 
