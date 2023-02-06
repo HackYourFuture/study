@@ -13,4 +13,4 @@ Have a look at the following video on indexes for a rundown of how this works an
 
 To learn more about this topic, check out the following:
 
-- [Indexes, when to use and when to avoid](https://medium.com/javarevisited/indexes-when-to-use-and-when-to-avoid-them-39c56e5a7329)
+- [Indexes, when to use and when to avoid](https://levelup.gitconnected.com/indexes-when-to-use-and-when-to-avoid-in-sql-445ffae6b4a3)
