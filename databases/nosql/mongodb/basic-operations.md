@@ -96,3 +96,17 @@ client.db("shows").collection("movies").find(
 ```
 
 There are many more advanced ways, but those will be for specific use cases. The documentation explains how to do that quite well.
+
+### Using MongoDB Node Driver
+
+Note that the syntax is slightly different for projection when using the NodeJS driver. So the same example as above would be written as:
+
+```js
+client.db("shows").collection("movies").find({}).project({
+  _id: false,
+  title: true,
+  tagline: true,
+});
+```
+
+All the rules are the same though, so it is just a different syntax. You can find more information about this [here](https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/read-operations/project/).
