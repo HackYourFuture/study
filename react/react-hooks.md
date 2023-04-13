@@ -8,6 +8,11 @@ You will probably already know about the `useState` hook as it is the basis of a
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=O6P86uwfdR0" %}
 
+There are some things that are not intuitive when dealing with the `useState` hook and will require some getting used to. Have a look at the following articles:
+- [Queueing a Series of State Updates](https://react.dev/learn/queueing-a-series-of-state-updates)
+- [Updating Objects in State](https://react.dev/learn/updating-objects-in-state). **Note: we suggest ignorning the `Immer` part for now**
+- [Updating Arrays in State](https://react.dev/learn/updating-arrays-in-state)
+
 ## useRef
 
 The `useRef` hook is a hook that can be useful in some very specific situations. The video below explains those situations very well:
