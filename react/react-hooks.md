@@ -8,6 +8,20 @@ You will probably already know about the `useState` hook as it is the basis of a
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=O6P86uwfdR0" %}
 
+## useRef
+
+The `useRef` hook is a hook that can be useful in some very specific situations. The video below explains those situations very well:
+
+{% hyf-youtube src="https://www.youtube.com/watch?v=t2ypzz6gJm0" %}
+
+To recap, there are two main use cases for this hook:
+- Whenever you need to store something that should *not* trigger a rerender
+- Whenever you need access to an element in the dom
+
+Have a look at the following articles:
+- [Referencing Values with Refs](https://react.dev/learn/referencing-values-with-refs)
+- [Manipulating the DOM with Refs](https://react.dev/learn/manipulating-the-dom-with-refs)
+
 ## useEffect
 
 The second most common hook is the `useEffect` hook. There are quite a few use cases for this hook as it provides some unique arguments. Have a look at the following video that explores a couple of use cases for the `useEffect` hook:
@@ -35,20 +49,6 @@ The React docs also have some even more advanced topics on effects for other spe
 - [Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effects)
 - [Separating Events from Effects](https://react.dev/learn/separating-events-from-effects)
 - [Removing Effect Dependencies](https://react.dev/learn/removing-effect-dependencies)
-
-## useRef
-
-The `useRef` hook is a hook that can be useful in some very specific situations. The video below explains those situations very well:
-
-{% hyf-youtube src="https://www.youtube.com/watch?v=t2ypzz6gJm0" %}
-
-To recap, there are two main use cases for this hook:
-- Whenever you need to store something that should *not* trigger a rerender
-- Whenever you need access to an element in the dom
-
-Have a look at the following articles:
-- [Referencing Values with Refs](https://react.dev/learn/referencing-values-with-refs)
-- [Manipulating the DOM with Refs](https://react.dev/learn/manipulating-the-dom-with-refs)
 
 # Extra reading
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
