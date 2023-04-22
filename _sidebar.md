@@ -10,6 +10,7 @@
   - [GitKraken](/git-and-github/gitkraken.md)
   - [Because Windows](/git-and-github/because-windows.md)
   - [Workflows](/git-and-github/workflows.md)
+  - [Markdown](/git-and-github/markdown.md)
 - [CLI](/cli/README.md)
 - Programming
   - [What is programming](/programming/README.md)
