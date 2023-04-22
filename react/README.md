@@ -67,9 +67,11 @@ One of the reasons for the existence of `JSX` goes back to the whole idea of `en
 
 In order to write valid `JSX`, we need to import the React library into our file. Without it, it won't be able to interpret it.
 
-Learn more about `JSX` here:
+Learn more about `JSX` by going through the following articles:
 
-- [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Your first component](https://react.dev/learn/your-first-component)
+- [Writing markup with JSX](https://react.dev/learn/writing-markup-with-jsx)
+- [JavaScript in JSX with Curly Braces](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
 
 ### DOM management
 When you want to write single page applications in vanilla JS you will notice that DOM management can be a headache. The reason is that you have to write the code that takes the DOM from the place it is now to where you want it to be.

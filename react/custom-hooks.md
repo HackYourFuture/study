@@ -12,7 +12,7 @@ In terms of implementation, a custom Hook is simply a JavaScript function whose 
 
 Study the following to learn more about it:
 
-- [Building your own hooks](https://reactjs.org/docs/hooks-custom.html)
+- [Reusing Logic with Custom Hooks](https://react.dev/learn/reusing-logic-with-custom-hooks)
 - [Building Custom React Hooks](https://medium.com/prototyped/building-custom-react-hooks-f6aad8567825)
 
 ## useFetch as an example
