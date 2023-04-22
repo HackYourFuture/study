@@ -12,18 +12,21 @@ Follow along with the following video (the video is for the MacOS terminal, so i
 
 You'll notice is that once you type in a command, the computer doesn't always give back feedback. This is completely normal. Most of application development goes like that, and it's good to get used to it.
 
-Now we suggest going through the most used commands using the following interactive web application: 
+Now we suggest going through the most used commands using the following interactive web application:
+
 - [learn using a virtual terminal](https://shubhamrath.dev/lterm/)
 
 ## A little Exercise
 
 This challenge is a little introduction to creating, navigating and editing files directly from command line, without any clicking!
-* Try to replicate [this folder structure](https://github.com/HackYourFutureBelgium/replicate-this-from-command-line) (including the file contents!)
+
+- Try to replicate [this folder structure](https://github.com/HackYourFutureBelgium/replicate-this-from-command-line) (including the file contents!)
 
 # Extra reading
+
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
 
 - [explainshell - find out what a command does by typing it in here](https://explainshell.com/)
 - [Terminus: a game](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)
-- [bashcrawl - a game to learn the command line! Click on `Terminal` when you get to the link](https://hub.gke2.mybinder.org/user/nthiery-bashcrawl-j9ryetlq/lab/workspaces/auto-a)
+- [bashcrawl](https://gitlab.com/slackermedia/bashcrawl#try-it-online-with-mybinder)
 - [Introduction to Bash](https://www.youtube.com/watch?v=BFMyUgF6I8Y)
