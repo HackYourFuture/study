@@ -11,6 +11,27 @@ The second benefit of using an online code storage is that it allows us to work 
 - [GIT Good: A Practical Introduction to GIT and GitHub I](https://codeburst.io/git-good-part-a-e0d826286a2a)
 - [GIT Good: A Practical Introduction to GIT and GitHub II](https://codeburst.io/git-good-a-practical-introduction-to-git-and-github-in-git-we-trust-f18fa263ec48)
 
+## Making pull requests
+
+A **pull request** is a term GitHub uses to refer to a request to incorporate code changes from one branch made by a developer (whether it's you or another developer) into the code stored in a different branch of a repository.
+
+> Sometimes you'll hear developers speak of "merge requests". This is just another name for the same thing: pulling changes from another branch or fork into your branch and merging the changes with your existing code. Software development platforms like GitLab (an alternative to GitHub) use this the term "merge request" instead of "pull request".
+
+These changes are made in one branch, and the pull request usually is made to merge into the `main` branch. However, this doesn't happen directly: in normal circumstances, there has to be at least one other person reviewing the proposal before it is approved to be merged. The reason why is simple: it's very easy to merge code that might be buggy or conflicts with what's already there.
+
+{% hyf-youtube src="https://www.youtube.com/watch?v=8lGpZkjnkt4" %}
+
+Pull requests only happen in remote repositories. This can happen in 2 ways:
+(1) From one branch to another **within the same repository**. For more information on this, read:
+
+- [Creating a pull request](https://help.github.com/en/articles/creating-a-pull-request)
+
+(2) From one branch to another branch **from a forked repository into the original repository**. A `fork` is a copy of a repository, that is stored in your personal GitHub account. Forks let you make changes to a project without affecting the original repository. You can fetch updates from or submit changes to the original repository with pull requests.
+
+While both are important to know about, it's useful to study the second way a little more in-depth because that's how you'll submit your homework:
+
+- [About forks](https://help.github.com/en/articles/about-forks)
+
 ## Being safe (SSH)
 
 SSH stands for Secure Shell and is a way of providing users a secure way of accessing (the content of) a computer over an unsecure network. Simply put, it makes the connection much more difficult to hack or intercept.

@@ -74,6 +74,32 @@ As always, getting practical will help cement what you learned and luckily there
 
 - [git-school](https://git-school.github.io/visualizing-git/)
 
+## 1. GIT branching
+
+`Branches` are a core feature of GIT. A branch allows you to work on a different "version" of your project. Take a look at the following image:
+
+![branches](assets/branches.png)
+
+Whenever you make a branch, you're creating an exact copy of your workspace that you can work with. Try it out:
+
+```md
+Go into a folder and initialize GIT to create a local repository. Then create a branch. In this new branch, create some basic files. **stage** and **commit** the changes you've made. Now, switch back to the original branch (**main**). What do you see? Nothing! That's because in that branch you didn't make those changes. If you switch back to the other branch you will see the files you've created again. Magic!
+```
+
+You can see a branch as an experiment, a possible way your project can evolve. Usually, each branch (except the `main` branch) contains code for what is called a new `feature`: a piece of functionality that you want to add to your software. Let's take Facebook as a simple example: After creating an account (which is a feature itself) you can do multiple things. Each "thing" is a feature: having a news feed, being able to send friend requests or liking posts.
+
+Working with branches is especially important when working with other developers. This only applies when working with a **remote** repository, which we'll talk about in the next section.
+
+When working with different branches it is useful to have one single branch that contains all the working and finished code: the `main` branch (we call it main out of convention, but in actuality you can name it whatever you want). Whenever you're working on a project that has already been put on the internet, it is the code from the main branch that is online.
+
+However, usually there's a separate branch that contains all the development code. Of course, this is called the `development` branch. This branch is an almost exact copy of main, but contains features that have not been tested yet.
+
+After finishing a feature, it is time to merge the branch into the main branch. This is usually either the `main` or `development` branch.
+
+Once the new version of the software has been tested and approved, the cycle repeats! Have a look at the following video:
+
+{% hyf-youtube src="https://www.youtube.com/watch?v=FyAAIHHClqI" %}
+
 ## Going deeper
 
 The above simple commands will be about 95% of what you will do with git. As long as everything goes smooth you will not have to do anything else and you are now an expert. Unfortunately it doesn't always go smooth and you will have to look into ways to solve your problem. We will not cover all those here as you will only need to look into it once you encounter a problem, but what we do want to provide is a video that goes into what git does under the hood. It goes quite deep so don't expect to follow everything he says as it is aimed at people who have used git for awhile, but come back to it whenever you run into an issue:
