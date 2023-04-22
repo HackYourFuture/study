@@ -1,13 +1,90 @@
 # Git
 
-* [LearnGitBranching](https://learngitbranching.js.org/) & [video tutorial](https://www.youtube.com/watch?v=dG0ke9vILQM)
-* [git-school](https://git-school.github.io/visualizing-git/)
-* [Copenhagen](https://github.com/HackYourFuture-CPH/Git)
+GIT is software that allows you to save your work at any given moment in time. It's typically called a `version control system`, which essentially means that it allows you to create `versions` of your workspace and makes possible to switch between older and newer states. Let's first see why we need a `version control system`:
 
----
+{% hyf-youtube src="https://www.youtube.com/watch?v=2ReR1YJrNOM" %}
 
-* [Git for Ages 4 and Up](https://www.youtube.com/watch?v=1ffBJ4sVUb4) - Outstanding video for an in-depth understanding of how Git works.
+You can think of it like a video game. You get to a certain point in the game, after hours of struggle. You're really proud of how far you've come, and don't want to do it over again in case you die. So you decide to _save your game_. If something bad happens after that point you can always reload your game and start from that point on.
 
----
+This is exactly what happens with GIT: however, instead of calling it _saving your game_ we call it **committing your changes**. A "change" is a code modification you made in one or more files. It's recommended to commit multiple times a day, every time you make something that is worth saving. Making commits often also makes it easier to reset your work to the last working state. Discarding changes with GIT is better than to trust on CTRL-Z to undo failed attempts.
 
-* [resolving conflicts with GitKraken](https://blog.axosoft.com/learn-git-merge-conflict/)
+If you ever would want to go back to a previous _game save_ you can make GIT help you do so by **checking out to that commit**. You will learn more about that in the next sections.
+
+Check out the following short clip to learn about the essentials of GIT, it will go a little fast but we will go into more detail later about each step:
+
+{% hyf-youtube src="https://www.youtube.com/watch?v=hwP7WQkmECE" %}
+
+## Installing GIT
+
+In order to use GIT you first have to install it. The software is different depending on your operating system:
+
+- For Windows, install [Git Bash](https://git-scm.com/download/win)
+- For MacOS, install [GIT](https://git-scm.com/download/mac)
+- For Linux, install [GIT](https://git-scm.com/download/linux)
+
+After you've installed it you can use it through the CLI. To verify that it worked, enter the command:
+
+```bash
+git --version
+```
+
+It should give you a version number which means that it is installed.
+
+You can work with GIT using only the CLI but you can also use a GUI (graphical user interface). Two free cross-platform examples are [SourceTree](https://www.sourcetreeapp.com/) and [Gitkraken](https://www.gitkraken.com/). It's up to personal preference what works the best, both CLI and GUI will use the same underlying system. You can even use both in the same project, e.g. commands on the CLI will reflect instantly in the GUI. The main advantage of a GUI is that it has a visual overview of all commits and branches, local and remote.
+
+Now that you have GIT installed, it's important to make a basic configuration. Inside your CLI, type in the following (Replace "Your name" and "your.email@youremailserver.com" with your own name and email address, respectively). In case you are using a GUI, it will probably ask the same data the first time you open the application, and it will do these commands for you so then you can skip this.
+
+```bash
+git config --global user.name "Your name"
+git config --global user.email "your.email@yourmailserver.com"
+```
+
+This makes sure GIT is able to identify you as the person that uses it to save your files and folders.
+
+## Basic GIT commands
+
+You'll use GIT like any software you execute through the CLI. So let's go deeper into the commands you use and what they do so that you can start using GIT for all of your projects.
+
+There are different ways of using GIT. For now we'll learn one procedure: **committing your workspace to a local repository**. Let's take that phrase apart first:
+
+- **Committing** is another word for saving or storing the changes you've made to the files in your workspace. For example, changing the content of a file is a "change".
+- **Workspace** is another word for the project folder (and its contents). When making a repository it will be in the root (in other words, the top level) of the folder.
+- **Local** refers to your computer, with no involvement of the internet. When you create a file or folder on your computer, you are creating it "locally".
+- **Repository** is a storage location containing the data regarding your project folder. GIT creates a hidden folder `.git` that functions as the local repository.
+
+Before we start we must know the most basic command of all:
+
+```bash
+git init
+```
+
+What it does is creating a brand new **local** repository in your project folder. Only after doing this you will be able to follow along the next procedure.
+
+Now we can continue with the actual procedure itself. This happens in 3 stages:
+
+1. **Untracked**. In this stage GIT is not aware of the changes in your workspace.
+2. **Staged**. In this stage the changes are selected for the next commit.
+3. **Committed** In this stage your changes have been saved into the local repository. If you need to refer to a previous version of your workspace you can safely do that now.
+
+This might sound very abstract, and it is. So to make it more comprehensible, let's go through all of it again with examples using this video:
+
+{% hyf-youtube src="https://www.youtube.com/watch?v=SWYqp7iY_Tc" %}
+
+As always, getting practical will help cement what you learned and luckily there is a great interactive website to let you practice these commands. Play around over here and see if you can create and merge a branch using the `commit`, `branch`, `checkout` and `merge` commands:
+
+- [git-school](https://git-school.github.io/visualizing-git/)
+
+## Going deeper
+
+The above simple commands will be about 95% of what you will do with git. As long as everything goes smooth you will not have to do anything else and you are now an expert. Unfortunately it doesn't always go smooth and you will have to look into ways to solve your problem. We will not cover all those here as you will only need to look into it once you encounter a problem, but what we do want to provide is a video that goes into what git does under the hood. It goes quite deep so don't expect to follow everything he says as it is aimed at people who have used git for awhile, but come back to it whenever you run into an issue:
+
+{% hyf-youtube src="https://www.youtube.com/watch?v=1ffBJ4sVUb4" %}
+
+This should give you a better idea of what it is exactly that you want to fix and should help you describe what you want to do. If you can describe your problem well then the internet (or ChatGPT) will always have an answer.
+
+# Extra reading
+
+If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
+
+- [LearnGitBranching](https://learngitbranching.js.org/) & [video tutorial](https://www.youtube.com/watch?v=dG0ke9vILQM)
+- [resolving conflicts with GitKraken](https://blog.axosoft.com/learn-git-merge-conflict/)
