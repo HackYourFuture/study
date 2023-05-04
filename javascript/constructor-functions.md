@@ -69,7 +69,7 @@ The difference with a factory function is the way to instantiate it. Instead of 
 const wouter = new Person("Wouter", 37);
 ```
 
-You may have seen this `new` keyword before when working with dates in JavaScript and now you know why you have to do that (although technically Date is a class, but that is out of the scope of this article)! Let's go a little deeper into what `new` actually does in this video:
+You may have seen this `new` keyword before when working with dates in JavaScript and now you know why you have to do that (although technically Date is a class, but that is out of the scope of this article)! Let's go a little deeper into what `new` actually does in this video (turn on the captions if you find the accent hard to follow):
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=dq7FDSCHQsM" %}
 
