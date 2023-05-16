@@ -108,11 +108,11 @@ This leads us to write the following code:
 const fruits = ["apple", "rottenBanana", "mango"];
 
 function takeOutRottenFruit(arrayOfFruits) {
-  const goodFruitsArray = arrayOfFruits.filter(fruit => fruit.include("rotten"));
+  const goodFruitsArray = arrayOfFruits.filter(fruit => !fruit.includes("rotten"));
   return goodFruitsArray;
 }
 
-const freshhhh = takeOutRottenFruit(fruits);
+const freshFruits = takeOutRottenFruit(fruits);
 ```
 
 ### Debug (5)
