@@ -42,7 +42,7 @@ This is not something that Bello will tell you, humans made all this up.
 Dog, animal, pet, humans, all these are abstractions.
 
 One way of abstracting is to think of entities and their relationships.
-An entity is an abstraction. It represents a certain category of things, like:
+An entity is an abstraction. It represents a certain category of things, often nouns, like:
 humans, women, men, animals, pets, broken bicycles, chairs, music, teachers, chewing gum, and planets.
 You can think of a **pet** as an entity that has a relationship to another entity **human**, its owner.
 More formally you can say a **human** owns **zero or more** **pets**.
@@ -53,7 +53,7 @@ Together these entities and relationships form the **domain model** for your app
 
 Learn more about entities with the following resource:
 
-{% hyf-youtube src="https://www.youtube.com/watch?v=hveVlCHZtsI" %}
+{% hyf-youtube src="https://www.youtube.com/watch?v=wOD02sezmX8" %}
 
 ## What is a database?
 
