@@ -1,9 +1,9 @@
 # React
 
-If you go to the official website of [React](https://www.reactjs.org) you'll read the following:
+If you go to the official website of [React](https://react.dev/) you'll read the following:
 
 ```
-A JavaScript library for building user interfaces
+The library for web and native user interfaces
 ```
 
 While completely true, this simple description means quite a lot more to the junior developer. React is a library that provides benefit to both the user and the developer.
