@@ -11,7 +11,7 @@ To protect yourself, do not reuse passwords. You can enter your email in [haveib
 
 ## How to NOT store user passwords
 
-In this great video, Tom Scott explaining how to NOT store user passwords. 
+In this great video, Tom Scott explaining how NOT to store user passwords. 
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=8ZtInClXe1Q" %}
 
