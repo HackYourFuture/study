@@ -12,6 +12,7 @@ To protect yourself, do not reuse passwords. You can enter your email in [haveib
 ## How to NOT store user passwords
 
 In this great video, Tom Scott explaining how to NOT store user passwords. 
+
 {% hyf-youtube src="https://www.youtube.com/watch?v=8ZtInClXe1Q" %}
 
 A few key takeouts from the video:
@@ -67,6 +68,49 @@ await compare("12345678", hashedPassword); // true
 We cannot reverse the hash, how does bcrypt know that "11223344" is the wrong password? 
 
 The trick is to hash the new password "11223344" through the same process like we did with the original password. If the result hash is the same, then the new password equal to the original password. This smart trick is how the `compare` method works.
+
+## Putting it all together
+In the following example, we are using bcrypt to securely store and check user passwords:
+
+```javascript
+import { hash, compare } from 'bcrypt';
+
+const userDatabase = [];
+const SALT_ROUNDS = 12;
+
+async function addUser(username, password) {
+  const hashedPassword = await hash(password, SALT_ROUNDS);
+  const user = { username, password: hashedPassword };
+  userDatabase.push(user);
+}
+
+async function login(username, password) {
+  const user = userDatabase.find(user => user.username === username);
+  if (!user) {
+    // User was not found in the database
+    return false;
+  }
+
+  // Compare the password to the user's hashed password
+  const isPasswordCorrect = await compare(password, user.password);
+  return isPasswordCorrect;
+}
+
+// tests
+await addUser('user1', 'hackYouRFuTure42');
+await addUser('user2', '12345678');
+await addUser('user3', 'ADF32rff2__@@@f');
+
+console.log(userDatabase);
+
+const loggedIn = await login('user1', 'hackYouRFuTure42');
+
+if(loggedIn) {
+  console.log('User logged in');
+} else {
+  console.log('Invalid username or password');
+}
+```
 
 ## Further Study
 
