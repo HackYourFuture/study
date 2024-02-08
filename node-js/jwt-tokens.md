@@ -33,7 +33,9 @@ console.log(token);
 ```
 
 The output of the code above will be
-> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxMjMiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzA3NDI4NDI3fQ.Fc1h3X2xqFspbBS3UdXTNEpd8dsL10Pt_lzAgnFZYAY
+```
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxMjMiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzA3NDI4NDI3fQ.Fc1h3X2xqFspbBS3UdXTNEpd8dsL10Pt_lzAgnFZYAY
+```
 
 This token can be now used to access protected endpoints. It is a bit longer than your standard opaque token, but it is more powerful and containing more information.
 
