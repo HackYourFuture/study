@@ -21,7 +21,7 @@ npm i jsonwebtoken
 
 To create a new JWT, we use the `sign()` function from the `jsonwebtoken` library:
 
-```JavaScript
+```javascript
 import jsonwebtoken from 'jsonwebtoken';
 
 const SECRET = 'H6AIgu0wsGCH2mC6ypyRubiPoPSpV4t1';
