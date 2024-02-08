@@ -12,7 +12,7 @@ When our backend application receives a HTTP request from the client, how can th
 
 One solution for this problem is to let the browser send the user's credentials (username and password) in every request. This way, we can authenticate and identify the user in every request. Sending the secret credentials in every request can be implemented with [Basic HTTP Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication). It is generally not a good idea to use this method due to security concerns.
 
-A better solution is for the application to issue a secret `session ID` after a successful login. This session ID is a long random string that does not makes sense to the user. The server has a connection between the session ID and the user itself. After login, the user will send only his session ID to the server in order to proof his identity. 
+A better solution is for the application to issue a secret `session ID` (Also called `token` or `access token`) after a successful login. This session ID is a long random string that does not makes sense to the user. The server has a connection between the session ID and the user itself. After login, the user will send only his session ID to the server in order to proof his identity. 
 
 Using a session ID is very flexible because we can delete it and add features like expiration date.
 
@@ -147,3 +147,41 @@ app.post('/logout', async (req, res) => {
 
 To logout a user, we simply delete his session ID from the sessions database. Now that the session ID is deleted, it can no longer be used by the client to access any protected endpoint. The client will have to authenticate again to receive a new session ID.
 
+## Opaque token vs JSON Web Token (JWT)
+### Opaque token
+In the previous section, we used a `session ID` to identify users. This Session ID is completely random string which is hard to guess. Because it is completely random and the client cannot get any information out of it, we call this an `Opaque token`.
+
+The disadvantage using an `Opaque token` is the extra work the server has to do in order to translate the token into the user. 
+
+### Opaque token disadvantage
+
+Remember this code?
+```javascript
+app.get('/profile', async (req, res) => {
+  const sessionId = getSessionId(req);
+  const username = sessions[sessionId];
+  ...
+}
+```
+In this code, for every `GET /profile` request, we search for the token in the `sessions` object. In real world applications, we want use an external Database to save all our sessions. Accessing this session database is **a lot** slower than accessing this simple `sessions` object.
+
+What if we could save this extra step of searching in the sessions database?
+
+One solution is to add more details to our `session ID`. What if our session ID will now contain the username? for example:
+
+```67e607ff-9df0-48e7-837f-13c3ad5e267f___johnsmith```
+
+With this improvement, we can now directly get the username from the HTTP request without querying the sessions database. Success? Well not really.
+
+If we do not verify that the session is real, a user can fake the session token and change the username to something else. 
+
+### JWT
+
+[JWT (JSON Web Token)](/node-js/jwt-tokens.md) is solving the issue of verification. With JWT, it is possible to add information to our token in a way that the server can verify the token without accessing the session database.
+
+Read more about JWT in [JWT section](/node-js/jwt-tokens.md) 
+
+
+
+## Further reading
+* [Express Session](https://github.com/expressjs/session)
