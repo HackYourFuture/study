@@ -80,7 +80,7 @@ In this example, we store the user passwords in the user database as-is. This is
 ## Further improvements
 Here are few suggestion on how we can improve the registration endpoint:
 
-1. Add a random user ID to the user object. You can use the popular [uuid](https://www.npmjs.com/package/uuid) library.
+1. Add a random user ID to the user object. You can use the popular [uuid](https://www.npmjs.com/package/uuid) library or the built-in `crypto.randomUUID()` function.
 1. The User database is stored in memory. This means that if we kill the NodeJS application, the user database will be deleted. In order to fix this, save the user database into a file in a JSON format using the [File system](https://nodejs.org/api/fs.html) module.
 1. Add additional checks to the `isValidUser` function. Check for the validity of the email, minimum password length, check the user database if the username has been previously registered.
 1. Create HTML client with a registration form and use `fetch` to send the POST request to the server. 
