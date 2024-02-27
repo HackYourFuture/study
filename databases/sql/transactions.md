@@ -12,7 +12,7 @@ Transactions are essentials when building applications since it is very rare tha
 
 To increase your understanding, study the following materials:
 
-- [Transaction examples](https://www.mysqltutorial.org/mysql-transaction.aspx/)
+- [Transaction examples](https://www.mysqltutorial.org/mysql-transaction.aspx/) [ X ]
 
 # Bonus video
 
