@@ -27,6 +27,19 @@ One of our volunteers has also made a movie to explain this setup and what Babel
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=oCbipSIt43k" %}
 
+## Vite
+
+Vite is slightly a new tool written by Evan You, the person who developed Vue.js framework. This tool can be used for creating react apps with different temple such as using Typescript or JavaScript. Also, we can use it with other frameworks like Vue and svelte or even with vanilla JavaScript.
+This tool introduces a big performance boost with easier setup comparing to an old technologies such as Create-react-app which relies on webpack. Those advantage shift the developers to use Vite over Create-react-app on most of the modern applications.
+To create our React app with Vite we simply run the following command:
+```
+ npm create vite@latest
+```
+Then we choose the desire template, for example "react-ts" which create a react app with Typescript. You can find more about the setup on the official docs:
+[Vite Getting Started](https://vitejs.dev/guide)
+If you feel curious about this technology consider reading the official:
+[Vite]([https://vitejs.dev/guide](https://vitejs.dev/guide/why.html))
+
 ## Static hosting
 
 React in itself creates what is called a `build` which is all your code converted into JavaScript that the browser can understand. In essence this is a static amount of code that we can host. There are many static site hosting platforms that make it easy to deploy your React applications.
