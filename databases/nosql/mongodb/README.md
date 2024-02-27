@@ -8,7 +8,7 @@ A document-oriented database stores the data in so-called documents (pretty obvi
 
 In our sections on document-oriented databases we are assuming you have SQL knowledge. The following diagram should help identify the terms used in document-oriented databases to relate them to what you know in SQL (courtesy of www.beginnersbook.com):
 
-![rdb-mongo-pic](./assets//RDBMS_MongoDB_Mapping.jpg)
+![rdb-mongo-pic](./assets//RDBMS_MongoDB_Mapping.jpg) [ X ]
 
 For example, let's consider the following object in json format:
 
