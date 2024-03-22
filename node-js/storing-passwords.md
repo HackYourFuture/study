@@ -1,13 +1,13 @@
 # How to store user passwords
 
 ## Why is it important?
-As developers, it is our responsibility to protect our user private data. Passwords are very personal data and should be stored securely in the database. 
+As developers, it is our responsibility to protect our user's private data. Passwords are very personal data and should be stored securely in the database. 
 
-If we do not secure our passwords in the database and our database get stolen or leaked, all our passwords can be easily read! This is very bad for our application because with all passwords exposed, anyone can login with any user. 
+If we do not secure our passwords in the database and our database get stolen or leaked, all our passwords can easily be read! This is very bad for our application because with all passwords exposed, anyone can login with any user.
 
-Leaked passwords can lead to even more problems: Many users reuse the same passwords for their email, banking app, social media accounts and more. Hackers often check stolen passwords and try to login to many different websites to check if the user reused the password. This practice one of the most popular methods hacking into social media and email accounts.
+Leaked passwords can lead to even more problems: Many users reuse the same passwords for their email, banking app, social media accounts and more. Hackers often check stolen passwords and try to login to many different websites to check if the user reused the password. This practice is one of the most popular methods of hacking into social media and email accounts.
 
-To protect yourself, do not reuse passwords. You can enter your email in [haveibeenpwned.com](https://haveibeenpwned.com/) to check if your email was part of a security breach in the past. Spoiler alert: It is most likely that the answer is yes. But don't feel bad or panic, those data breaches are very common, happened to the largest websites like LinkedIn and Adobe. It is likely that you used one of those websites in the past. 
+To protect yourself, do not reuse passwords. You can enter your email in [haveibeenpwned.com](https://haveibeenpwned.com/) to check if your email was part of a security breach in the past. Spoiler alert: It is most likely that the answer is yes. But don't feel bad or panic, those data breaches are very common, happened to the largest websites like LinkedIn and Adobe. It is likely that you used one of those websites in the past. Just make sure that you don't use the same password on every site and change the password on the sites that have had a breach.
 
 ## How to NOT store user passwords
 
