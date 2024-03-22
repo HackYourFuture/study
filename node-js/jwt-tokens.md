@@ -1,17 +1,17 @@
 # JSON Web Token (JWT)
 ## What is JWT
-The following video provides a great explanation on what is s JWT and how it looks like.
+The following video provides a great explanation on what JWT is and what it looks like.
 
 {% hyf-youtube src="https://www.youtube.com/watch?v=7Q17ubqLfaM" %}
 
 JSON web tokens have few advantages:
 
-1. There is no need to create or access session database to convert session ID to user information.
+1. There is no need to create or access a session database to convert session ID to user information.
 2. The token can be verified by many different applications independently. Without talking to each other or accessing a central token database.
 3. The token signed and verified by using industry standard encryption algorithms. Those algorithms are keeping the token safe from unwanted modifications. 
 
 ## Examples
-The signing and verifying of JWT is a very complicated process to implement yourself. This is why in the following examples, we use the popular [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) npm package to create JWT for us.
+The signing and verifying of JWT is very complicated to implement yourself. This is why in the following examples, we use the popular [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) npm package to create JWT for us.
 
 ```shell
 npm i jsonwebtoken
