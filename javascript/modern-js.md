@@ -285,6 +285,10 @@ async function fetchAndRender() {
 }
 ```
 
+An error thrown in a function can be caught in any higher level function that is in its call chain (i.e., lower in the call stack). In the current example the error could be caught in `fetchData()` itself or, as is done here, in the calling `fetchAndRender()` function.
+
+When an error is thrown in some function, JavaScript will walk down the call chain (starting from the function throwing the error) until it finds a function with a `try...catch` block. If found, it will execute its `catch` block. If no function with a `try...catch` block is found in the call chain, the error will be passed on to the host environment (browser or Node.JS) and will cause the current execution to terminate with a runtime error and stack trace in the console.
+
 Notice that in this example we did not catch the error inside the `fetchData()` function. Let's suppose we tried that as in the next example:
 
 ```js
