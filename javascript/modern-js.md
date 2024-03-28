@@ -264,10 +264,10 @@ In the Promise object, we can use the function `catch` to take care of errors. I
 function fetchAndRender() {
   fetchData('https://randomuser.me/api/'')
     .then((data) => {
-      // Render the data
+      // TODO: Render the data
     })
     .catch((error) => {
-      // Oops, no data: handle the error instead
+      // TODO: Oops, no data: handle the error instead
     });
 }
 ```
@@ -278,9 +278,9 @@ With the `async/await` keywords, we don't get a `catch` function to use. So inst
 async function fetchAndRender() {
   try {
     const data = await fetchAsync('https://randomuser.me/api/');
-    // Render the data
+    // TODO: Render the data
   } catch (error) {
-    // Oops, no data: handle the error instead
+    // TODO: Oops, no data: handle the error instead
   }
 }
 ```
