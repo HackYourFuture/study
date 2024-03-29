@@ -211,7 +211,7 @@ If you have not learned anything about Promises yet, skip this part for now and 
 
 The `async/await` syntax is a relatively new addition to JavaScript and is a more convenient way to "consume" promises as compared to the `.then()/.catch()` syntax.
 
-Consider the function below that fetches data from a `url` passed as an argument. The `fetch()` function built into the browser returns a promise that resolves to a `response` object. This object includes an `.ok` property that is `true` if the server returned a valid response and `false` otherwise. If `true`, the expected JSON data can be obtained by calling the `.json()` method on the the `response` object. This in its turn returns a promise that resolves to a JavaScript object representing the parsed JSON data.
+Consider the function below that fetches data from a `url` passed as an argument. The [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) function built into the browser returns a promise that resolves to a [`response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object. This object includes an [`.ok`](https://developer.mozilla.org/en-US/docs/Web/API/Response/ok) property that is `true` if the server returned a valid response and `false` otherwise. If `true`, the expected JSON data can be obtained by calling the [`.json()`](https://developer.mozilla.org/en-US/docs/Web/API/Response/json) method on the the `response` object. This in its turn returns a promise that resolves to a JavaScript object representing the parsed JSON data.
 
 If the response was not OK the example code returns a rejected promise with appropriate error information.
 
@@ -307,6 +307,12 @@ async function fetchData(url) {
 
 If an error occurs inside the `fetchData()` function the `catch` block executes, which logs the error to the console. With the error now "handled" (i.e. "consumed") by the `catch` block, the function subsequently returns with `undefined` as its return value. The calling function, in our example `fetchAndRender()`, no longer sees an error, as `fetchData()` already "handled" it. Instead, it now receives the value `undefined` and assigns that to the `data` variable. Obviously this will result in undefined behaviour.
 
+Here is how it is worded in [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function#description):
+
+> _Each time when an async function is called, it returns a new Promise which will be resolved with the value returned by the async function, or rejected with an exception uncaught within the async function._
+
+In the example function above the exception _is_ caught and therefore it returns a resolved promise with the value of `undefined` (because `fetchData()` has no explicit `return` value) rather than a rejected promise with the error.
+
 If you would like your function to log an error to the console while still passing on the error to the calling function you can "rethrow" the error inside the `catch` block, like this:
 
 ```js
@@ -323,6 +329,8 @@ async function fetchData(url) {
   }
 }
 ```
+
+Now the added `throw` in `fetchData()` is uncaught in the function itself resulting in a rejected promise that can be caught in the calling function.
 
 ### Extra reading about Async/await
 
