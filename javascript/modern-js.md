@@ -332,6 +332,10 @@ async function fetchData(url) {
 
 Now the added `throw` in `fetchData()` is uncaught in the function itself resulting in a rejected promise that can be caught in the calling function.
 
+Finally, you may have noticed that we added an `async` keyword when returning the result from `response.json()`. The `response.json()` method may return a rejected promise in case the response text cannot be parsed as valid JSON. The added the `await` keyword ensures that an [exception is thrown](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await#exceptions) inside the `try` block of `fetchData()` if `response.json()` returns a rejected promise. This will then be caught by the `catch` block which causes parse error to be logged to the console before it is rethrown.
+
+If the `await` keyword was left out the rejected promise was returned directly to the calling function (in our example that would be `fetchAndRender()`) without anything being logged to the console.
+
 ### Extra reading about Async/await
 
 - [The Evolution of Callbacks, Promises & Async/Await](https://www.youtube.com/watch?v=gB-OmN1egV8)
