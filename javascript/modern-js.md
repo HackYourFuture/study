@@ -338,7 +338,6 @@ If the `await` keyword was left out the rejected promise was returned directly t
 
 ### Extra reading about Async/await
 
-- [The Evolution of Callbacks, Promises & Async/Await](https://www.youtube.com/watch?v=gB-OmN1egV8)
 - [Async JS Crash Course - Callbacks, Promises, Async/Await](https://www.youtube.com/watch?v=PoRJizFvM7s)
 - [JavaScript Try Catch & Error Handling ES6 Tutorial](https://www.youtube.com/watch?v=ye-aIwGJKNg)
 - [Error handling, "try..catch"](https://javascript.info/try-catch)
