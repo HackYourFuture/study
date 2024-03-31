@@ -243,8 +243,8 @@ async function fetchData(url) {
 Putting the keyword `async` in front of the function declaration will make this an asynchronous function. This has two effects:
 
 1. This function will now return a promise. This promise will resolve to whatever value you `return`.
-2. You can now use the `await` keyword inside the function body to "await" the resolved value of the promise. This resolved value can then be assigned to a variable. Note that this waiting for the promise to resolve it non-blocking.
-3. You can `throw` an error inside the function body to effectively return a rejected promise.
+2. You can now use the `await` keyword inside the function body to "await" the settlement of a promise. If the promise is resolved the resolved value becomes available for subsequent use. In this example it is assigned to a variable. If the promise is rejected the `await` keyword effectively [throws](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw) an error (i.e. the rejection value). Note that waiting for the promise to be settled is non-blocking.
+3. Conversely, if you `throw` an error inside an `async` function it will return a rejected promise.
 
 ### Catching errors in async/await
 
