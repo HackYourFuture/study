@@ -30,6 +30,7 @@
     - [HTTP methods](/the-internet/http-methods.md)
   - [API](/the-internet/api.md)
     - [Fetch](/the-internet/fetch.md)
+    - [CORS](/the-internet/cors.md)
     - [Designing API's](/the-internet/designing-apis.md)
 - [HTML & CSS](/html-css/README.md)
   - [HTML](/html-css/html.md)
