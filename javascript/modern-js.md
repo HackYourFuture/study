@@ -255,7 +255,7 @@ But before we get into that, we should discuss the type of errors that can typic
 > We generally talk about a _happy path_ and an _error path_ (or _unhappy path_) for your code.
 >
 > - The _happy path_ is the execution path through your code if all is well: no errors encountered.
-> - The _error path_ is the execution path through your code if an error is encountered.
+> - The _unhappy path_ is the execution path through your code if an error is encountered.
 >
 > This section is about designing the _error path_.
 
