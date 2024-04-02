@@ -252,6 +252,13 @@ As you might have noticed, the `async/await` keywords don't give us a way to cat
 
 But before we get into that, we should discuss the type of errors that can typically occur in a JavaScript application.
 
+> We generally talk about a _happy path_ and an _error path_ (or _unhappy path_) for your code.
+>
+> - The _happy path_ is the execution path through your code if all is well: no errors encountered.
+> - The _error path_ is the execution path through your code if an error is encountered.
+>
+> This section is about designing the _error path_.
+
 - Your application can cause runtime errors because of incorrect JavaScript syntax or an incorrect data type. These are typically errors that you need to fix before shipping your application. Your application should not try and catch such errors. They will usually turn up as unhandled errors in the console. Make fixing them your top priority.
 
 - Anticipated application and/or infrastructure errors. Examples are network errors, data corruption errors, data validation errors, etc. These types of errors can be expected and should not crash your application if they occur.Instead your application should be resilient to them and recover as gracefully as possible. This might involve informing the user of the situation and suggesting remedial action where possible.
