@@ -25,9 +25,9 @@ Let's imagine that we have an application which can be accessed at `https://my-s
 - `https://my-super-application.com/images/background.png`
 - `https://my-super-application.com/images/logo.png`
 
-The browser has no issues loading them and my application is working just fine! Now I want to rely on [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) APIs to query new resources on the web *(ND: While fetch is a more modern implementation, both APIs offer similar capabilities)*.
+The browser has no issues loading them and my application is working just fine! Now I want to rely on [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) to query new resources on the web *(Note: While fetch is a more modern implementation, both ways offer similar capabilities)*.
 
-The user does something on my page and I now need to display a new image. In the first version of the application, the image is stored at the same origin. I can use `fetch` to get the resource at `https://my-super-application.com/images/super-image.png`:
+The user does something on my page and I now need to display a new image. In the first version of the application, the image is stored at the same web site. I can use `fetch` to get the resource at `https://my-super-application.com/images/super-image.png`:
 
 ```js
 async function getImage() {
@@ -37,13 +37,13 @@ async function getImage() {
 }
 ```
 
-It works without any issue! But now, for some reason, I want the image to come from another origin. For example, I want my user to see the image at `https://www.commitstrip.com/wp-content/uploads/2018/05/Strip-La-joie-du-message-derreur-english650-final.jpg`.
+It works without any issue! But now, for some reason, I want the image to come from another location or, stated more correctly, from another *origin*. For example, I want my user to see the image at `https://www.commitstrip.com/wp-content/uploads/2018/05/Strip-La-joie-du-message-derreur-english650-final.jpg`.
 
 > Now is the right time to explain what is an [Origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) when we talk about the Web. The Web as we know it uses HTTP as its core protocol to exchange resources in a [REST](https://simple.wikipedia.org/wiki/Representational_state_transfer) fashion. Each resource is identified by its [URL](https://developer.mozilla.org/en-US/docs/Glossary/URL). The [Origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) is defined by the **scheme** (protocol), **hostname** (domain), and **port** of the URL used to access it. Two resources have the same origin only when the **scheme**, **hostname**, and **port** all match.
 >
 > ![URL Parts](assets/url.png)
 
-As we can see the origin is different compared to my original application origin. It means that I'm requesting a resource from a different origin and therefore making a **cross-origin request**.
+As we can see the origin of the new image (`https://www.commitstrip.com`) is different compared to my original application origin (`https://my-super-application.com`).  It means that I'm requesting a resource from a different origin and therefore making a **cross-origin request**.
 
 ![Cross-Origin Request](assets/cross-origin-request.png)
 
@@ -59,7 +59,7 @@ Let's imagine that you are authenticated with your bank website at `my-bank.com`
 
 Without [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and because of the [Same-Origin Policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy?ea-publisher=javadecompilerscom), we wouldn't be able to load resource from 3rd Party websites and APIs making the web less vibrant 😿.
 
-Thanks to CORS, the browser and the web server are able to exchange headers (prefixed with `Access-Control-*`) defining if the resource can be consume from the application's origin in a more secured and controlled manner.
+Thanks to CORS, the browser and the web server are able to exchange headers (prefixed with `Access-Control-*`) defining if the resource can be consumed from the application's origin in a more secure and controlled manner.
 
 ## How should I work with CORS?
 
