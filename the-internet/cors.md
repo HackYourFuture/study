@@ -1,6 +1,6 @@
 # Cross Origin Resources Sharing (CORS)
 
-CORS stands for Cross-Origin Resource Sharing. But what is this?
+CORS stands for Cross-Origin Resource Sharing. You may come across CORS when you want to fetch data from a Web API. So what is it?
 
 As per Mozilla Developer Network (MDN) documentation:
 
