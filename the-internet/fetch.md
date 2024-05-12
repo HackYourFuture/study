@@ -22,7 +22,6 @@ Where is this function defined, you may wonder? Simple: it's found in the global
 
 When your JavaScript file is loaded into the DOM, it automatically will have access to any of the browser's web APIs (one if which is the `Fetch API`). That's why you can use it in your JavaScript files.
 
-> Keep in mind that `fetch` only works on newer browser versions. To figure out which browsers can use fetch, check [this](https://caniuse.com/#feat=fetch) out.
 
 # Practice
 If you want a little more practice as well as a recap of what the fetch API brings you then have a look at the following.

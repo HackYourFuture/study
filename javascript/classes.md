@@ -72,7 +72,7 @@ class Person {
   #name;
 
   constructor(name, age) {
-    this.name = name;
+    this.#name = name;
     this.age = age;
   }
 
@@ -81,7 +81,8 @@ class Person {
   }
 }
 const reema = new Person("Reema", 25);
-console.log(reema.#name); // undefined
+console.log(reema.name); // undefined
+console.log(reema.#name); // error!
 console.log(reema.getName()); // Reema
 ```
 
