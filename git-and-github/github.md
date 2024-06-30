@@ -63,3 +63,4 @@ If you just can't get enough, here are some extra links that mentors/students ha
 - [Updating a feature branch](https://gist.github.com/santisbon/a1a60db1fb8eecd1beeacd986ae5d3ca)
 - [How to make your first pull request on GitHub](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/)
 - [Mastering Issues](https://guides.github.com/features/issues/)
+
