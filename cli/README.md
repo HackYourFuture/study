@@ -8,11 +8,7 @@ As a beginning developer it's important to get familiar with it, as it will teac
 
 Follow along with the following video (the video is for the MacOS terminal, so if you are on windows you can use your Git Bash and run the same commands):
 
-<div style="width: 100%; max-width: 100vw;">
-    <a href="https://www.youtube.com/watch?v=5XgBd6rjuDQ" target="_blank">
-        <img src="https://img.youtube.com/vi/5XgBd6rjuDQ/0.jpg" alt="Video Terminal Basics for Beginners" style="width: 100%; height: auto;"/>
-    </a>
-</div>
+{% hyf-youtube src=“https://www.youtube.com/watch?v=5XgBd6rjuDQ” %}
 
 You'll notice is that once you type in a command, the computer doesn't always give back feedback. This is completely normal. Most of application development goes like that, and it's good to get used to it.
 
