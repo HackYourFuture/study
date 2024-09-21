@@ -108,6 +108,8 @@ The above simple commands will be about 95% of what you will do with git. As lon
 
 This should give you a better idea of what it is exactly that you want to fix and should help you describe what you want to do. If you can describe your problem well then the internet (or ChatGPT) will always have an answer.
 
+You can also find concise guidelines on writing clear, well-structured commit messages on the [Conventional Commits site](https://www.conventionalcommits.org/en/v1.0.0/).
+
 # Extra reading
 
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
