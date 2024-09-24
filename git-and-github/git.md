@@ -38,8 +38,15 @@ Now that you have GIT installed, it's important to make a basic configuration. I
 git config --global user.name "Your name"
 git config --global user.email "your.email@yourmailserver.com"
 ```
-
 This makes sure GIT is able to identify you as the person that uses it to save your files and folders.
+
+In addition, if you are using a Windows computer, issue the following command:
+
+```bash
+git config --global core.autocrlf false
+```
+
+This ensures that your files contain the same line endings as your fellow trainees using Mac or Linux computers.
 
 ## Basic GIT commands
 
