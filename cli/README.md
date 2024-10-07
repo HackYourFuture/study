@@ -8,25 +8,27 @@ As a beginning developer it's important to get familiar with it, as it will teac
 
 Follow along with the following video (the video is for the MacOS terminal, so if you are on windows you can use your Git Bash and run the same commands):
 
-{% hyf-youtube src="https://www.youtube.com/watch?v=5XgBd6rjuDQ" %}
+{% hyf-youtube src=“https://www.youtube.com/watch?v=5XgBd6rjuDQ” %}
 
 You'll notice is that once you type in a command, the computer doesn't always give back feedback. This is completely normal. Most of application development goes like that, and it's good to get used to it.
 
-Now we suggest going through the most used commands using the following interactive web application:
+Check out the most used commands in this [Cheat Sheet](https://phoenixnap.com/kb/wp-content/uploads/2023/05/mac-terminal-commands-cheat-sheet-pdf.pdf) for macOS Terminal.
 
-- [learn using a virtual terminal](https://shubhamrath.dev/lterm/)
+## Interactive Command-Line Games
 
-## A little Exercise
+Here are two online activities to practice and improve your command-line skills:
 
-This challenge is a little introduction to creating, navigating and editing files directly from command line, without any clicking!
+1. **Cmd Challenge** – Small programming puzzles directly in your browser to practice terminal commands. ([Cmd Challenge](https://cmdchallenge.com))
 
-- Try to replicate [this folder structure](https://github.com/HackYourFutureBelgium/replicate-this-from-command-line) (including the file contents!)
+2. **Terminus** – An interactive adventure game set in an online terminal ([Terminus](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)).
+
+These platforms are great for learning command-line features through practical exercises and challenges.
 
 # Extra reading
 
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
 
-- [explainshell - find out what a command does by typing it in here](https://explainshell.com/)
-- [Terminus: a game](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)
-- [bashcrawl](https://gitlab.com/slackermedia/bashcrawl#try-it-online-with-mybinder)
+- [Explainshell - find out what a command does by typing it in here](https://explainshell.com/)
+- [Terminal Temple: an interactive online terminal simulator](https://www.terminaltemple.com)
+- [Bashcrawl](https://gitlab.com/slackermedia/bashcrawl#try-it-online-with-mybinder)
 - [Introduction to Bash](https://www.youtube.com/watch?v=BFMyUgF6I8Y)
