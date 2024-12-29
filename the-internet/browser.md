@@ -14,7 +14,7 @@ In your journey into becoming a web developer it's important to know the tools y
 
 A website, ultimately is a set of instructions describing how a series of webpages should look. It's up to the browser to render it by reading the code from your HTML/CSS and JavaScript files. There are, however, differences in the code interpretation of the different browsers, thus making the output look differently.
 
-That's why you should check the way your website looks on different browsers during the development of your website. This is called making it **cross browser compatible**>
+That's why you should check the way your website looks on different browsers during the development of your website. This is called making it **cross browser compatible**.
 
 You can use the following online tool in order see how your pages look on multiple browsers:
 
