@@ -48,6 +48,10 @@ If you feel adventurous, then read this [Functional Dependency Wikipage](https:/
 
 - No multi-value dependency.
 
+#### 5NF Project-join normal form (PJ/NF) (4NF + rule)
+
+- No join dependency
+
 ### Example
 
 #### 1NF
@@ -247,7 +251,58 @@ and
 +-------------+-----------+
 ```
 
+#### 5NF
+
+Consider the following table 
+
+```
++----------------+-----------------------+--------------------+--------------------------+
+| ISBN           | Title                 |  Author            | Publisher                |
++----------------+-----------------------+--------------------+--------------------------+
+| 978-0316769174 | To Kill a Mockingbird | Harper Lee         | Grand Central Publishing |
+| 978-0061120084 | 1984                  | George Orwell      | Penguin Books            |
+| 978-1455586691 | The Alchemist         | Paulo Coelho       | HarperOne                |
+| 978-0062315007 | Sapiens               | Yuval Noah Harari  | Harper Perennial         |
+| 978-0804139298 | The Power of Habit    | Charles Duhigg     | Random House             |
++----------------+-----------------------+--------------------+--------------------------+
+
+This table has a composite key consist of three primary keys (ISBN, Author, Publisher), suppose we want to search for a book knowing that some books may have the same author or publisher which means we will end with duplicate data. Also, if we want to update any book we will have to update multiple rows. In addition, storing large data in one table is not efficient. Finally, if our database becomes bigger, it will be hard to scale it. To solve this we can break the previous table into three tables: 
+
++----------------+-----------------------+
+| ISBN           | Title                 |
++----------------+-----------------------+
+| 978-0316769174 | To Kill a Mockingbird |
+| 978-0061120084 | 1984                  | 
+| 978-1455586691 | The Alchemist         |
+| 978-0062315007 | Sapiens               | 
+| 978-0804139298 | The Power of Habit    |
++----------------+-----------------------+
+
++------------------------------+
+| AuthorID | Author            |
++------------------------------+
+| 1        | Harper Lee        |
+| 2        | George Orwell     | 
+| 3        | Paulo Coelho      |
+| 4        | Yuval Noah Harari | 
+| 5        | Charles Duhigg    |
++------------------------------+
+
++-------------+--------------------------+
+| PublisherID | Publisher                |
++-------------+--------------------------+
+| 1           | Grand Central Publishing |
+| 2           | Penguin Books            |
+| 3           | HarperOne                |
+| 4           | Harper Perennial         |
+| 5           | Random House             |
++-------------+------------+-------------+
+
+Now we do not have to worry about updating many rows or having all the data in just one place
+```
+
 - [Normalization in common English](https://medium.com/@mattburgess/critical-concepts-normalization-f9b5b1bf417e)
+- [Normalization Written Tutorial ](https://www.javatpoint.com/dbms-normalization)
 - [Reasons for Database Normalization](https://www.essentialsql.com/get-ready-to-learn-sql-database-normalization-explained-in-simple-english/)
 - [Normalization Video Tutorials](https://www.studytonight.com/dbms/database-normalization.php)
 
