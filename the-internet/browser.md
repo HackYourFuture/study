@@ -45,3 +45,4 @@ If you just can't get enough, here are some extra links that mentors/students ha
 - [how do they work](https://www.youtube.com/watch?v=WjDrMKZWCt0)
 - [Browsers? 1](https://www.youtube.com/watch?v=TcbhVv9ty44)
 - [Browsers? 2](https://www.youtube.com/watch?v=Ir61LfjYyHk)
++ [Browsers: behind the scenes] https://blog.logrocket.com/how-browser-rendering-works-behind-scenes/
