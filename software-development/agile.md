@@ -8,7 +8,7 @@ Agile is a broad term that is used for many different things, meaning that whene
 
 ### Agile values / manifesto
 
-1- **Individuals and interactions** over processes and tools : 
+1- **Individuals and interactions** over processes and tools :
 
 Agile teams recognize that processes and tools are important to getting the project done, and they can be really valuable. You’ve already learned about a few practices that agile teams use: daily standups, user stories, task boards, and retrospectives. These are all valuable tools that can make a real difference to an agile team. But agile teams value individuals and interactions even more than processes and tools, because **teams always work best when you pay attention to the human element, the individual people on the team are more important**.
 
@@ -34,7 +34,7 @@ When you’re building software, it’s not always easy to see the direct connec
 
 1- Our highest priority is to **satisfy the customer** through early and continuous delivery of valuable software.
 
-Early delivery +  Continuous delivery  =  Satisfied users
+Early delivery + Continuous delivery = Satisfied users
 
 2- **Welcome changing requirements**, even late in development. Agile processes harness change for the customer’s competitive advantage.
 
@@ -49,7 +49,7 @@ If the team is building a feature that isn’t useful or does the wrong thing, t
 It’s really common for developers to dread or resent meeting with users, because those meetings often uncover changes, which leads to rework that can often be difficult and frustrating. But when the team has a better, more agile mindset, they know that **meeting with users more often keeps them in sync**, and actually prevents those changes.
 
 5- Build projects around motivated individuals. Give them **the environment and support they need**,
-    and **trust them** to get the job done.
+and **trust them** to get the job done.
 
 6- The most efficient and effective method of conveying information to and within a development team is **face-to-face conversation**.
 
@@ -74,33 +74,36 @@ When the team gets together and talks about what they need to build, it really i
 **Scrum** is a software development framework focused on project management and product development based on the Agile principles. When a team uses Scrum, every project follows the same basic pattern.
 
 ### Roles
+
 1- **Product Owner** works with the team to maintain a Product Backlog (a list of the new features, changes to existing
 features, bug fixes, infrastructure changes or other activities that a team may deliver in order to achieve a specific outcome.)
 
-2- **The Scrum Master** helps guide the team past roadblocks 
+2- **The Scrum Master** helps guide the team past roadblocks
 
 3- **Development Team members** (everyone else on the team)
 
 ### Daily scrum / standup
+
 One of the most common scrum practices that teams adopt is called the daily standup, a meeting that happens every day, during which team members talk about what they’re working on and the challenges they are facing. The meeting is kept short by making everyone stand for the duration. Adding a daily standup to their projects has brought success to a lot of teams, and it’s often the first step in going agile. The daily standup meeting is much more effective when everyone on the team has the right mindset—everyone listens to each other, and they all work together to make sure the project is on track.
 
 ### Sprints
+
 Scrum defines a teams time into sprints of 2-4 weeks. At the start of a sprint, the team does a **sprint planning** to determine which features from the **Product Backlog** they’ll build during the sprint. This is called the **Sprint Backlog**, and the team works throughout the sprint to build all of the features in it. Every day the team holds a short meeting called the **Daily Scrum** as mentioned above. At the end of the sprint, working software is demonstrated to the product owner and stakeholders in the **sprint review** , and the team holds a **retrospective** (A retrospective is a meeting in which everyone talks about how the last part of the project went) to figure out lessons they’ve learned and make changes to perform better.
 
 # Extra reading
+
 If you just can't get enough, here are some extra links that mentors/students have found useful concerning this topic:
 
-* [What is Agile?](https://www.cprime.com/resources/what-is-agile-what-is-scrum/)
-* [Agile Manifesto](https://agilemanifesto.org/principles.html)
-* [Agile Development by Cartoon](https://www.youtube.com/watch?v=Z9QbYZh1YXY&list=PLBUu5aGDLKnbeEx8U-5r436bw6p9wv1rS)
-* [Splitting User Stories](https://www.youtube.com/watch?v=EDT0HMtDwYI)
-* [user story based portfolio example](https://github.com/elewa-student/User-Centered-Development)
+- [What is Agile?](https://www.cprime.com/resources/what-is-agile-what-is-scrum/)
+- [Agile Manifesto](https://agilemanifesto.org/principles.html)
+- [Agile Development by Cartoon](https://www.youtube.com/watch?v=Z9QbYZh1YXY&list=PLBUu5aGDLKnbeEx8U-5r436bw6p9wv1rS)
+- [Splitting User Stories](https://www.youtube.com/watch?v=EDT0HMtDwYI)
+- [user story based portfolio example](https://github.com/elewa-student/User-Centered-Development)
 
 ## User Stories
 
-* [Agile Development by Cartoon](https://www.youtube.com/watch?v=Z9QbYZh1YXY&list=PLBUu5aGDLKnbeEx8U-5r436bw6p9wv1rS)
-* [Splitting User Stories](https://www.youtube.com/watch?v=EDT0HMtDwYI)
-* [Duck Duck Search](https://duckduckgo.com/?q=what+are+user+stories&iax=videos)
-* [Example project: Built with Branches](https://github.com/hackyourfuturebelgium/built-with-branches)
-* [Examples and a Template](https://www.atlassian.com/agile/project-management/user-stories)
-* [Obligatory: WikiPedia](https://en.wikipedia.org/wiki/User_story)
+- [Splitting User Stories](https://www.youtube.com/watch?v=EDT0HMtDwYI)
+- [Duck Duck Search](https://duckduckgo.com/?q=what+are+user+stories&iax=videos)
+- [Example project: Built with Branches](https://github.com/hackyourfuturebelgium/built-with-branches)
+- [Examples and a Template](https://www.atlassian.com/agile/project-management/user-stories)
+- [Obligatory: WikiPedia](https://en.wikipedia.org/wiki/User_story)
