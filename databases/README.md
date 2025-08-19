@@ -85,7 +85,7 @@ console.log(musicians[0]); // prints: 'John Coltrane'
 
 While this JavaScript database is a nice and simple example, it doesn't persist the data for the next day.
 
-In this module you will focus primarily on persisting databases, in particular the relational database MySQL.
+In this module you will focus primarily on persisting databases, in particular the relational database PostgreSQL.
 
 To learn more, check out the following resources:
 
