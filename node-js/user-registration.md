@@ -31,7 +31,7 @@ First, we need a user database. The simplest solution can be defining an array i
 ```javascript
 const usersDatabase = [];
 ```
-In real world applications, we use a real database server like MySQL or MongoDB to store all the users.
+In real world applications, we use a real database server like PostgreSQL or MongoDB to store all the users.
 
 Next, lets create the endpoint:
 

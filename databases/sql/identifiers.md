@@ -13,12 +13,11 @@ To define a Primary Key you can use the following syntax:
 
 ```sql
 CREATE TABLE teachers (
-      teacher_number INT NOT NULL AUTO_INCREMENT,
+      teacher_number SERIAL PRIMARY KEY,
       name VARCHAR(50),
       date_of_birth DATE,
       subject TEXT,
-      email VARCHAR(200),
-      PRIMARY KEY (teacher_number)
+      email VARCHAR(200)
 );
 ```
 
@@ -36,11 +35,10 @@ To define a Foreign Key while creating the table, you can use the following synt
 
 ```sql
 CREATE TABLE students (
-    student_number INT NOT NULL AUTO_INCREMENT,
+    student_number SERIAL PRIMARY KEY,
     name VARCHAR(50),
     teacher_id INT,
     email VARCHAR(200),
-    PRIMARY KEY (student_number),
     FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_number)
 );
 ```
@@ -79,7 +77,7 @@ For example, in a database with students from several schools you'd expect the s
 
 ```sql
 CREATE TABLE students_across_schools (
-    student_number INT NOT NULL AUTO_INCREMENT,
+    student_number SERIAL,
     name VARCHAR(50),
     school_id INT,
     PRIMARY KEY (student_number, school_id)
