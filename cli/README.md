@@ -12,9 +12,9 @@ Follow along with the following video (the video is for the MacOS terminal, so i
 
 You'll notice is that once you type in a command, the computer doesn't always give back feedback. This is completely normal. Most of application development goes like that, and it's good to get used to it.
 
-Now we suggest going through the most used commands using the following interactive web application:
+<!--Now we suggest going through the most used commands using the following interactive web application:
 
-- [learn using a virtual terminal](https://shubhamrath.dev/lterm/)
+- [learn using a virtual terminal](https://shubhamrath.dev/lterm/)-->
 
 ## A little Exercise
 
