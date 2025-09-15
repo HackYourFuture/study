@@ -48,7 +48,7 @@ CREATE TABLE students (
 A foreign key does two useful things;
 
 - It will guarantee referential integrity: When a row in a table refers to a corresponding row in another table, then that corresponding row will
-exist.
+  exist.
 - It will create an index on this column, giving faster results when querying on this particular column.
 
 or you can add a foreign key later:
@@ -71,23 +71,20 @@ ALTER TABLE teachers ADD UNIQUE KEY (email);
 
 ## Composite Key
 
-A composite key is a key composed of two or more columns in a table that can be used to uniquely identify
-each row in the table when the columns are combined **uniqueness is guaranteed**, but when taken individually
-it does not guarantee uniqueness.
+A composite key is a key composed of two or more columns in a table that can be used to uniquely identify each row in the table when the columns are combined **uniqueness is guaranteed**, but when taken individually it does not guarantee uniqueness. However, if a non-prime column (not part of the primary key) depends only on part of the composite key, the table violates the Second Normal Form (2NF).
 
-For example, in a database with students from several schools you'd expect the same `student_number` across schools.
+2NF requires that every non-prime column is fully dependent on the entire primary key, not just a part of it. If a column depends only on one part of a composite key, this is called a partial dependency, which is not allowed in 2NF.
+
+Suppose you have students from several schools, and you expect the same `student_number` across schools. You can use a composite key:
 
 ```sql
 CREATE TABLE students_across_schools (
-    student_number INT NOT NULL AUTO_INCREMENT,
+    school_id INT NOT NULL,
+    student_number INT NOT NULL,
     name VARCHAR(50),
-    school_id INT,
-    PRIMARY KEY (student_number, school_id)
+    PRIMARY KEY (school_id, student_number)
 );
 ```
-
-Although composite keys show up in theoretical examples it isn't common to use them in practice.
-Most frameworks will add an `id` column or a prefixed id column like `student_id`
 
 For more information, check out the following:
 
